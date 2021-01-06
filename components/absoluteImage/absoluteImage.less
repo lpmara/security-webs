@@ -1,0 +1,61 @@
+.ContentTwoSize {
+  width: 100%;
+  position: relative;
+  height: 600px;
+  .mainBackgroundLayer {
+    height: 480px;
+    background: linear-gradient(#4e5259, #30323a);
+    .flexContainer {
+      width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .leftSideContent {
+        width: 35%;
+        .absoluteImage {
+          position: absolute;
+          z-index: 1;
+        }
+      }
+      .rightSideContent {
+        width: 65%;
+        position: relative;
+        float: right;
+        padding-top: 30px;
+        .titleText {
+          margin-top: -180px;
+          position: absolute;
+          color: #484b52;
+          font-weight: 900;
+          font-size: 58px;
+          padding-bottom: 30px;
+          margin-left: -120px;
+        }
+        .detailText {
+          padding-bottom: 25px;
+          display: flex;
+          .numberCircle {
+            background: #484b52;
+            border-radius: 50%;
+            font-weight: 500;
+            font-size: 24px;
+            color: #ffffff;
+            height: 30px;
+            display: inline-block;
+            width: 30px;
+            text-align: center;
+            margin-top: 2px;
+          }
+          .textDetail {
+            margin-top: -30px;
+            z-index: 0;
+            margin-left: -50px;
+            font-weight: normal;
+            font-size: 24px;
+            color: #484b52;
+          }
+        }
+      }
+    }
+  }
+}
