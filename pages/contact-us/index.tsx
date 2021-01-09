@@ -46,9 +46,6 @@ export const Index = () => {
                       Email: bodyguard.5559@gmail.com
                     </div>
                   </div>
-                  <div className={styles.taxID}>
-                    เลขที่ประจำตัวผู้เสียภาษี&ensp;0105550122773
-                  </div>
                 </div>
               </div>
             </div>
