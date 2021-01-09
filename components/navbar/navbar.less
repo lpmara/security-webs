@@ -1,5 +1,5 @@
 @import '../../public/styles/less/fontawesome.less';
-
+@import '../../public/styles/global.less';
 html {
   font-family: monospace;
 }
@@ -15,6 +15,63 @@ body {
   position: fixed;
   padding-bottom: 100px;
   z-index: 2;
+
+  .mobileContainer {
+    display: none;
+  }
+
+  .mobileNavContainer {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    width: 100%;
+    height: 790px;
+    overflow-x: auto;
+    background-color: white;
+    // margin: 0 auto;
+    // height: 95px;
+    .ulContainer {
+      // overflow-y: hidden;
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-delay: 0s;
+      // height: 200px;
+      margin: 0;
+      height: 100%;
+      padding-inline-start: 0px;
+      li {
+        list-style: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e7eaef;
+        .SubMenuClass {
+          padding-inline-start: 10px;
+          .subHeader {
+            padding-top: 15px;
+            label {
+              color: black;
+              font-size: 5vw;
+            }
+          }
+          label {
+            font-size: 4vw;
+          }
+          li {
+            border-bottom: none;
+          }
+        }
+      }
+      li label {
+        color: #484b52;
+        margin-left: 30px;
+        font-size: 5vw;
+      }
+    }
+  }
+
+
   .topMenu {
     height: 54px;
     background-color: black;
@@ -90,6 +147,134 @@ body {
           // padding-right: px;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 766px) {
+  .centerContainer {
+    // background: linear-gradient(#4e5259, #30323a);
+    // height: 74px;
+    width: 100%;
+    // border-bottom: #30323a solid 1px;
+    position: fixed;
+    padding-bottom: 100px;
+    z-index: 2;
+  
+    .mobileContainer {
+      display: block;
+      .navbarTitle {
+        height: 29px;
+        background-color: red;
+        .flexTopContainer {
+          width: 90%;
+          display: flex;
+          justify-content: space-around;
+          .emailText {
+            margin-top: 7px;
+            font-size: 0.8rem;
+          }
+          .telNumber1 {
+            margin-top: 7px;
+            font-size: 0.8rem;
+          }
+          .telNumber2 {
+            margin-top: 7px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .navbarDetail {
+        height: 54px;
+        background-color: white;
+        .flexNavDetail {
+          margin: 0 auto;
+          width: 90%;
+          display: flex;
+          justify-content: space-between;
+          .imageLogo {
+            width: 40%;
+            img {
+              width: 100%;
+            }
+          }
+          .MenuListMobile {
+            display: flex;
+            padding: 0 10px 0 16px;
+            align-items: center;
+            justify-content: center;
+    
+            .MenuIcon {
+              div {
+                width: 35px;
+                height: 5px;
+                background-color: black;
+                margin: 6px 0;
+              }
+            }
+          }
+    
+        }
+      }
+    }
+  
+    .mobileNavContainer {
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-delay: 0s;
+      width: 100%;
+      height: 790px;
+      overflow-x: auto;
+      background-color: white;
+      // margin: 0 auto;
+      // height: 95px;
+      .ulContainer {
+        // overflow-y: hidden;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        // height: 200px;
+        margin: 0;
+        height: 100%;
+        padding-inline-start: 0px;
+        li {
+          list-style: none;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #e7eaef;
+          .SubMenuClass {
+            padding-inline-start: 10px;
+            .subHeader {
+              padding-top: 15px;
+              label {
+                color: black;
+                font-size: 5vw;
+              }
+            }
+            label {
+              font-size: 4vw;
+            }
+            li {
+              border-bottom: none;
+            }
+          }
+        }
+        li label {
+          color: #484b52;
+          margin-left: 30px;
+          font-size: 5vw;
+        }
+      }
+    }
+  
+  
+    .topMenu {
+      display: none;
+    }
+    .bottomMenu {
+      display: none;
     }
   }
 }
