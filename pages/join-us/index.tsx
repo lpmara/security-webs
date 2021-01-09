@@ -16,7 +16,7 @@ export const Index = () => {
             </div>
             <div className={styles.textNormal1}>
               <div>มาร่วมเป็นส่วนหนึ่งของงาน บอดี้การ์ด รักษาความปลอดภัยให้กับบุคลสำคัญ</div>
-              <div style={{paddingTop: '30px', textDecoration: 'underline'}}>ติดต่อ Mr.ken (+66) 99 496 2596</div>
+              <div style={{paddingTop: '30px', textDecoration: 'underline'}}>ติดต่อ Mr.ken (+66) 89 496 2596</div>
             </div>
             <div className={styles.vidExampleContainer}>
                 <div className={styles.vidTitleExample}>
