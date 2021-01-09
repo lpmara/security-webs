@@ -26,6 +26,7 @@ export const Index = () => {
           <div className={styles.leftContent}>
             <div className={styles.imagePaddTop}>
               <Image
+loading={'eager'}
                     src={'/images/301127.jpg'}
                     alt={'image 0000'}
                     width={1125}
@@ -33,6 +34,7 @@ export const Index = () => {
                   /></div>
             <div>
               <Image
+loading={'eager'}
                     src={'/images/301132.jpg'}
                     alt={'image 0001'}
                     width={1048}
@@ -49,6 +51,7 @@ export const Index = () => {
               </div>
               <div className={styles.imageOptimize1}>
               <Image
+loading={'eager'}
                     src={'/images/301122-removebg-preview.png'}
                     alt={'image 0002'}
                     width={673}
@@ -58,6 +61,7 @@ export const Index = () => {
               <div className={styles.textGarutee}>การันตีด้วยทีมงานที่มีประสบการณ์ การคุ้มกันบุคลสำคัญจำนวนมาก</div>
               <div className={styles.imageOptimize}>
               <Image
+loading={'eager'}
                     src={'/images/232006.jpg'}
                     alt={'image 0003'}
                     width={1878}

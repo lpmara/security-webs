@@ -43,6 +43,7 @@ export const Index = () => {
             </div>
             <div className={styles.contentImageMain}>
               <Image
+loading={'eager'}
                 alt={'Image1234'}
                 src={'/images/our-service/231982.jpg'}
                 width={1876}
@@ -53,6 +54,7 @@ export const Index = () => {
           <div className={styles.secondContent}>
             <div className={styles.contentImageMain}>
             <Image
+loading={'eager'}
                 alt={'Image1234'}
                 src={'/images/our-service/232002.jpg'}
                 width={1876}

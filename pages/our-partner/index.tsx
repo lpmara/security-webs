@@ -95,7 +95,8 @@ export const Index = () => {
       <div className={styles.percentClass}>
       <div className={styles.bannerConainer}></div>
         <div className={styles.MainContainer}>
-          <Image className={styles.centerImage}
+          <Image
+loading={'eager'} className={styles.centerImage}
             src="/images/partner/326710-removebg-preview.png"
             alt="secue-logo2"
             width={500}
@@ -108,6 +109,7 @@ export const Index = () => {
               {partnerImage.map((data, index) => (
                 <div key={index} className={styles.bannerImage}>
                   <Image
+loading={'eager'}
                     src={data.imagePath}
                     alt={'logo' + index}
                     width={160}

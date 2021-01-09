@@ -23,6 +23,7 @@ export const Index = () => {
             </div>
             <div className={styles.titleImage}>
             <Image
+loading={'eager'}
                 alt={'about us image 0'}
                 src={'/images/about-us/232028.jpg'}
                 width={1878}
@@ -33,6 +34,7 @@ export const Index = () => {
           <div className={styles.flexContainer}>
             <div className={styles.leftContent}>
             <Image
+loading={'eager'}
                 alt={'about us image 1'}
                 src={'/images/about-us/301130.jpg'}
                 width={1126}
@@ -48,6 +50,7 @@ export const Index = () => {
           </div>
           <div className={styles.imagePicTCUFirst}>
               <Image
+loading={'eager'}
                   alt={'Image about TCU2'}
                   src={'/images/about-us/326702.jpg'}
                   width={988}
@@ -57,6 +60,7 @@ export const Index = () => {
           <div className={styles.flexTCU}>
           <div className={styles.imagePicTCU}>
               <Image
+loading={'eager'}
                   alt={'Image about TCU1'}
                   src={'/images/about-us/326700.jpg'}
                   width={904}
@@ -65,6 +69,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePicTCU}>
               <Image
+loading={'eager'}
                   alt={'Image about TCU2'}
                   src={'/images/about-us/326701.jpg'}
                   width={904}
@@ -75,6 +80,7 @@ export const Index = () => {
           <div className={styles.flexImageContainer}>
             <div className={styles.imagePic}>
               <Image
+loading={'eager'}
                   alt={'Image about 1'}
                   src={'/images/about-us/298019.jpg'}
                   width={1078}
@@ -83,6 +89,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePic}>
             <Image
+loading={'eager'}
                   alt={'Image about 2'}
                   src={'/images/about-us/298020.jpg'}
                   width={1078}
@@ -91,6 +98,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePic}>
             <Image
+loading={'eager'}
                   alt={'Image about 3'}
                   src={'/images/about-us/298022.jpg'}
                   width={1078}
@@ -99,6 +107,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePic}>
             <Image
+loading={'eager'}
                   alt={'Image about 4'}
                   src={'/images/about-us/298024.jpg'}
                   width={1078}
@@ -107,6 +116,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePic}>
             <Image
+loading={'eager'}
                   alt={'Image about 5'}
                   src={'/images/about-us/298023.jpg'}
                   width={1078}
@@ -115,6 +125,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePic}>
             <Image
+loading={'eager'}
                   alt={'Image about 6'}
                   src={'/images/about-us/298021.jpg'}
                   width={1078}
@@ -123,6 +134,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePic}>
             <Image
+loading={'eager'}
                   alt={'Image about 7'}
                   src={'/images/about-us/327753.jpg'}
                   width={1078}
@@ -131,6 +143,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePic}>
             <Image
+loading={'eager'}
                   alt={'Image about 8'}
                   src={'/images/about-us/327754.jpg'}
                   width={1078}
@@ -139,6 +152,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePicL}>
             <Image
+loading={'eager'}
                   alt={'Image about 9'}
                   src={'/images/about-us/326698.jpg'}
                   width={980}
@@ -147,6 +161,7 @@ export const Index = () => {
             </div>
             <div className={styles.imagePicL}>
             <Image
+loading={'eager'}
                   alt={'Image about 9'}
                   src={'/images/about-us/326699.jpg'}
                   width={980}

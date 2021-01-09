@@ -9,6 +9,7 @@ export const Index = () => {
       {/* <img src={'/images/logo2.png'} alt="secue-logo2" /> */}
       <div className={styles.centerContainer}>
         <Image
+loading={'eager'}
           className={styles.leftLogo}
           src="/images/logo1.png"
           alt="secue-logo2"
@@ -16,6 +17,7 @@ export const Index = () => {
           height={240}
         />
         <Image
+loading={'eager'}
           className={styles.rightLogo}
           src="/images/logo2.png"
           alt="secue-logo2"

@@ -26,6 +26,7 @@ export const Index = () => {
               {/* <div className={styles.detailText}>
                 <div className={styles.textDetail}>
                 <Image
+loading={'eager'}
                 alt={'Professional center image'}
                 src={'/images/beer001_preview_rev_1.png'}
                 width={561}

@@ -18,6 +18,7 @@ export const Index = () => {
         <div className={styles.flexBottomContainer}>
           <div className={styles.imageLogo}>
             <Image
+loading={'eager'}
               className={styles.leftLogo}
               src="/images/logo001-removebg-preview.png"
               alt="secue-logo2"
@@ -25,6 +26,7 @@ export const Index = () => {
               height={82}
             />
             {/* <Image
+loading={'eager'}
               className={styles.rightLogo}
               src="/images/logo2.png"
               alt="secue-logo2"
@@ -70,6 +72,7 @@ export const Index = () => {
       {/* <div className={styles.MainContainer}>
         <div className={styles.flexContainer}>
           <Image
+loading={'eager'}
             className={styles.leftLogo}
             src="/images/logo001-removebg-preview.png"
             alt="secue-logo2"
@@ -103,6 +106,7 @@ export const Index = () => {
           </Link>
 
           <Image
+loading={'eager'}
             className={styles.rightLogo}
             src="/images/logo2.png"
             alt="secue-logo2"

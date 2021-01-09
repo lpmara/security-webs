@@ -13,6 +13,7 @@ export const Index = () => {
               style={{ marginTop: '-120px' }}
             >
               <Image
+loading={'eager'}
                 alt={'Professional center image'}
                 src={'/images/koo1_preview_rev_1.png'}
                 width={418}
@@ -28,6 +29,7 @@ export const Index = () => {
             <div className={styles.detailText}>
               <div className={styles.textDetail}>
                 <Image
+loading={'eager'}
                   alt={'Professional center image'}
                   src={'/images/video1.png'}
                   width={895}

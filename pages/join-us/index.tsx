@@ -32,12 +32,14 @@ export const Index = () => {
             </div>
             <div className={styles.imageCorp}>
             <Image
+loading={'eager'}
                     src={'/images/join-us/308633_censored.jpg'}
                     alt={'image 0000'}
                     width={650}
                     height={1063}
                   />
                    <Image
+loading={'eager'}
                     src={'/images/join-us/319855_censored.jpg'}
                     alt={'image 0000'}
                     width={650}
@@ -49,6 +51,7 @@ export const Index = () => {
             </div>
             <div className={styles.imageCorp}>
             <Image
+loading={'eager'}
                     src={'/images/join-us/309696.jpg'}
                     alt={'bodyguard register form'}
                     width={925}
