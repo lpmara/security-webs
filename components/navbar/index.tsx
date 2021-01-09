@@ -118,6 +118,22 @@ loading={'eager'}
               width={86}
               height={82}
             />
+            <Image
+                  loading={'eager'}
+                  className={styles.leftLogo}
+                  src="/images/301122-removebg-preview.png"
+                  alt="secue-logo2"
+                  width={156}
+                  height={82}
+                />
+                              <Image
+                  loading={'eager'}
+                  className={styles.leftLogo}
+                  src="/images/logo1.png"
+                  alt="secue-logo2"
+                  width={86}
+                  height={82}
+                />
           </div>
           <div className={styles.centerLink}>
             <Link href="/">
