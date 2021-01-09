@@ -83,7 +83,7 @@
 @media (max-width: 766px) {
   
 .MainContainer {
-  padding-top: 135px;
+  padding-top: 84px;
   padding-bottom: 100px;
   background: url('/images/backg1.jpg');
   height: 100%;
@@ -94,26 +94,31 @@
   // background-image: linear-gradient(white 80%, #c7e5fc);
   // background-color: #c7e5fc;
   .bannerConainer {
+    width: 100%;
     background: url('/images/231983.jpg');
-    background-attachment: fixed;
-    height: 400px;
+    background-attachment: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
   }
   .flexContainer {
     padding-top: 50px;
-    width: 1550px;
+    width: 90%;
     margin: 0 auto;
     padding-bottom: 100px;
     .Title {
       font-weight: 900;
       text-align: center;
-      font-size: 48px;
+      font-size: 11vw;
       color: red;
     }
     .centerVideo {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       text-align: center;
       div {
+        height: 330px!important;
         margin: 0 auto;
       }
       
@@ -121,34 +126,43 @@
     .firstContent {
       display:flex;
       justify-content: space-around;
+      flex-direction: column;
       .leftContent {
-        width: 30%;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
         .imagePaddTop {
           padding-bottom: 40px;
+          display: none;
+          .imageSleep {
+            display: none;
+          }
         }
         img {
           border-radius: 20px;
         }
       }
       .rightContent {
-        width: 60%;
+        width: 100%;
         .textContent {
           color: whitesmoke;
-          font-size: 30px;
+          padding-left: 20px;
+          font-size: 6.2vw;
+          font-weight: 500;
           div {
-            text-align: center;
+            text-align: left;
           }
         }
         .textGarutee {
-          // padding-top: 10px;
+           padding-bottom: 15px;
           text-align: center;
           color: red;
-          font-size: 30px;
+          font-size: 6.2vw;
         }
         .imageOptimize1 {
-          padding-top: 50px;
+          padding-top: 0px;
           img {
-            padding-left:220px;
+            padding-left:0px;
             margin: 0 auto;
           }
         }

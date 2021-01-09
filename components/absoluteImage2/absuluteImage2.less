@@ -84,3 +84,95 @@
     }
   }
 }
+
+@media (max-width: 766px) {
+  .ContentTwoSize {
+    width: 100%;
+    position: relative;
+    // height: 780px;
+    .mainBackgroundLayer {
+      height: auto;
+      background: linear-gradient(180deg, #f7f8fb 0%, #e7eaef 100%);
+      .flexContainer {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .leftSideContent {
+          width: 100%;
+          margin-top: 35px;
+          padding-left: 5px;
+          margin-bottom: 35px;
+          .detailText {
+            // margin-top: -130px;
+            position: relative;
+            color: #484b52;
+            font-weight: 900;
+            font-size: 8vw;
+            padding-bottom: 5px;
+            // margin-left: -120px
+          }
+          .detail1 {
+            display: none;
+            font-weight: normal;
+            font-size: 5vw;
+            color: #484b52;
+            margin-top: 10px;
+          }
+          .detail2 {
+            margin-top: 20px;
+            font-weight: normal;
+            font-size: 5vw;
+            color: #484b52;
+          }
+          //   .absoluteImage {
+          //     position: absolute;
+          //     z-index: 1;
+          //     rotate: 180;
+          //   }
+        }
+        .rightSideContent {
+          display: none;
+          width: 0%;
+          position: relative;
+          float: right;
+          padding-top: 30px;
+          .titleText {
+            margin-top: -130px;
+            position: absolute;
+            color: #484b52;
+            font-weight: 900;
+            font-size: 58px;
+            padding-bottom: 30px;
+            margin-left: -120px;
+          }
+          .detailText {
+            padding-bottom: 25px;
+            display: flex;
+            .numberCircle {
+              background: #484b52;
+              border-radius: 50%;
+              font-weight: 500;
+              font-size: 24px;
+              color: #ffffff;
+              height: 30px;
+              display: inline-block;
+              width: 30px;
+              text-align: center;
+              margin-top: 2px;
+            }
+            .textDetail {
+              margin-left: 76px;
+              margin-top: -115px;
+              z-index: 0;
+              //   margin-left: -50px;
+              font-weight: normal;
+              font-size: 24px;
+              color: #484b52;
+            }
+          }
+        }
+      }
+    }
+  }
+}

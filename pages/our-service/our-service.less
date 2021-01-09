@@ -1,6 +1,6 @@
 .MainContainer {
   width: 100%;
-  background: black;
+  background: url('/images/backg1.jpg');
   height: 100%;
   padding-top: 130px;
   .bannerConainer {
@@ -62,4 +62,88 @@
 
     // background-color: yellow;
   }
+}
+
+
+@media (max-width: 766px) {
+  .MainContainer {
+    width: 100%;
+    background: url('/images/backg1.jpg');
+    height: 100%;
+    padding-top: 85px;
+    .bannerConainer {
+      background: url('/images/231983.jpg');
+      background-attachment: unset;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 260px;
+    }
+    .flexContainer {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      color: whitesmoke;
+      .titleName {
+        text-align: center;
+        font-size: 12vw;
+        font-weight: 500;
+        padding-bottom: 20px;
+      }
+      .firstContent {
+        display: flex;
+        justify-content: stretch;
+        flex-direction: column-reverse;
+        .contentTextMain {
+          font-size: 5.4vw;
+          width: 100%;
+          .divPadding {
+            // display: -webkit-inline-box;
+            padding-bottom: 30px;
+            .hideDiv {
+              display: none;
+            }
+          }
+        }
+        .contentImageMain {
+          width: 100%;
+          padding-bottom: 20px;
+          img{
+            margin-top: 30px;
+          }
+        }
+      }
+      .secondContent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        .contentImageMain {
+          width: 100%;
+          img{
+            margin-top: 50px;
+          }
+        }
+        .gapCenter {
+          width: 5%;
+  
+        }
+        .contentTextMain {
+          font-size: 5.4vw;
+          width: 100%;
+          
+          .divPadding {
+            // display: -webkit-inline-box;
+            padding-bottom: 30px;
+            .hideDiv {
+              display: none;
+            }
+          }
+        }
+      }
+  
+      // background-color: yellow;
+    }
+  }
+  
 }

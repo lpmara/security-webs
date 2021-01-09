@@ -4,7 +4,7 @@ import styles from './navbar.less';
 import Link from 'next/link';
 export const Index = () => {
   const [toggleMenuMobile, setToggleMenuMobile] = useState(false);
-  
+
   const mobileNav = <div className={styles.mobileContainer}>
     <div className={styles.navbarTitle}>
       <div className={styles.flexTopContainer}>
@@ -23,8 +23,24 @@ export const Index = () => {
                   className={styles.leftLogo}
                   src="/images/logo001-removebg-preview.png"
                   alt="secue-logo2"
-                  width={86}
-                  height={82}
+                  width={56}
+                  height={52}
+                />
+                 <Image
+                  loading={'eager'}
+                  className={styles.leftLogo}
+                  src="/images/301122-removebg-preview.png"
+                  alt="secue-logo2"
+                  width={95}
+                  height={52}
+                />
+                              <Image
+                  loading={'eager'}
+                  className={styles.leftLogo}
+                  src="/images/logo1.png"
+                  alt="secue-logo2"
+                  width={56}
+                  height={52}
                 />
         </div>
         <div
@@ -138,6 +154,7 @@ loading={'eager'}
         </div>
       </div>
       {mobileNav}
+      {toggleMenuMobile && mobileMenu}
     </div>
   );
 };

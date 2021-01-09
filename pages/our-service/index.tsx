@@ -31,7 +31,7 @@ export const Index = () => {
               </div>
               <div className={styles.divPadding}>
                 <div>2. รับทำงานทั้งนอกเครื่องแบบ และ ในเครื่องแบบ</div>
-                <div>&nbsp;&nbsp;&nbsp;(สามารถปรับเปลี่ยนได้ตามสถานการณ์)</div>
+                <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;(สามารถปรับเปลี่ยนได้ตามสถานการณ์)</div>
                    
               </div>
               <div className={styles.divPadding}>
@@ -77,7 +77,7 @@ loading={'eager'}
                 </div>
                 <div className={styles.divPadding}>
                   <div>9. รับบริการทั้งในและนอกประเทศ Agent ทุกคนมีตราประจำตัว</div>
-                  <div>&nbsp;&nbsp;&nbsp;เรามี Partner อยู่ทั่วโลกคอยบริการท่าน </div>
+                  <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;เรามี Partner อยู่ทั่วโลกคอยบริการท่าน </div>
                
                 </div>
             </div>
