@@ -11,12 +11,13 @@ export const Index = () => {
           <div className={styles.headerBannerContactUs}>
             <div className={styles.contactUsTitle}>Contact</div>
             <div className={styles.subTitle}>
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            บริษัทของเรา ขอนำเสนอบริการดูแลและคุ้มกันบุคคลสำคัญ(Vip)
+
             </div>
             <div className={styles.subTitle}>
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx{' '}
+            ระดับการดูแลตั้งแต่พื้นฐานจนถึงระดับสูงสุด(24 ช.ม){' '}
               <span className={styles.callCenter}>
-                xxxxxxxxxxxxxA xxxxxxxxxxx
+                
               </span>
             </div>
           </div>
@@ -28,21 +29,21 @@ export const Index = () => {
                 <div className={styles.formLeftcontainer}>
                   <div className={styles.gruopListContact}>
                     <div className={styles.contactText}>
-                      <div>(+66) 99 496 xxxx (Mr.ken)</div>
-                      <div>(+66) 82 283 xxxx (Mr.ken)</div>
+                      <div>(+66) 89 496 2596 (Mr.ken)</div>
+                      <div>(+66) 82 283 9789 (Mr.ken)</div>
                     </div>
                   </div>
                   <div className={styles.gruopListContact}>
-                    <div className={styles.contactText}>Line: TeamKen.xxx</div>
+                    <div className={styles.contactText}>Line: TeamKen.111</div>
                   </div>
                   <div className={styles.gruopListContact}>
                     <div className={styles.contactText}>
-                      We chat: wxid_y00g2dxxxxxxxx
+                      We chat: wxid_y00q2dynw9zg22
                     </div>
                   </div>
                   <div className={styles.gruopListContact}>
                     <div className={styles.contactText}>
-                      Email: Contact@xxxxxxx.com
+                      Email: bodyguard.5559@gmail.com
                     </div>
                   </div>
                   <div className={styles.taxID}>

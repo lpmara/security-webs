@@ -8,10 +8,10 @@ export const Index = () => {
       <div className={styles.topMenu}>
         <div className={styles.flexTopContainer}>
           <div className={styles.emailText}>
-            <i className={styles.user}></i>contact@xxxxxxx.com
+            bodyguard.5559@gmail.com
           </div>
-          <div className={styles.telNumber1}>(+66) 99 496 xxxx</div>
-          <div className={styles.telNumber2}>(+66) 82 283 xxxx</div>
+          <div className={styles.telNumber1}>(+66) 89 496 2596</div>
+          <div className={styles.telNumber2}>(+66) 82 283 9789</div>
         </div>
       </div>
       <div className={styles.bottomMenu}>

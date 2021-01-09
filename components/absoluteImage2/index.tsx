@@ -23,7 +23,7 @@ export const Index = () => {
                 {/* <div>Bodyguard VIP And Security Protection</div>  */}
                 {/* <div style={{paddingLeft: '15px'}}></div> */}
             </div>
-              <div className={styles.detailText}>
+              {/* <div className={styles.detailText}>
                 <div className={styles.textDetail}>
                 <Image
                 alt={'Professional center image'}
@@ -32,7 +32,7 @@ export const Index = () => {
                 height={445}
               />
                 </div>
-              </div>
+              </div> */}
           </div>
         </div>
       </div>

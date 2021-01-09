@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './join-us.less';
 import NavBar from '../../components/navbar';
 import Image from 'next/image';
+import ReactPlayer from 'react-player';
 export const Index = () => {
   return (
     <>
@@ -16,6 +17,15 @@ export const Index = () => {
             <div className={styles.textNormal1}>
               <div>มาร่วมเป็นส่วนหนึ่งของงาน บอดี้การ์ด รักษาความปลอดภัยให้กับบุคลสำคัญ</div>
               <div style={{paddingTop: '30px', textDecoration: 'underline'}}>ติดต่อ Mr.ken (+66) 99 496 xxxx</div>
+            </div>
+            <div className={styles.vidExampleContainer}>
+                <div className={styles.vidTitleExample}>
+                    ตัวอย่าง วีดีโอการ ฝึกซ้อมของเรา
+                </div>
+                <div className={styles.centerVideo}>
+                  <ReactPlayer url="https://www.youtube.com/watch?v=vGGPhO0tHJs"  width='80%'
+                  height='660px'/>
+                </div>
             </div>
             <div className={styles.textExample}>
                 ตัวอย่าง บัตรประจำตัวบอดี้การ์ดของเรา

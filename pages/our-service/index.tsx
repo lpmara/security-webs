@@ -10,9 +10,9 @@ export const Index = () => {
       title: 'Personal Security Service',
       titleColor: 'whitesmoke',
       detail1:
-        'xxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxxx xxxxxxxxxxxxxxx xxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxxxxxxx',
+        'ด้วยประสบการณ์การดูแลอารักขาบุคคลสำคัญเกินกว่า 26ปี โดยผู้มีประสบการณ์ที่ผ่านการฝึกอบรมการรักษาความปลอดภัยมาอย่างเข้มข้น ตามหลักมาตราฐานสากล และมีประสบการณ์',
       detail2:
-        'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxx xxxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxxxxx',
+        'เรามีความสามารถใช้เทคโนโลยีด้านการรักษาความปลอดภัย เพื่อส่งเสริมให้ท่านมีความปลอดภัยสูงสุด เราสัญญาว่าชีวิต และทรัพย์สินของท่านจะปลอดภัย ใช้บริการของเรา',
       side: 1,
     },
   ];

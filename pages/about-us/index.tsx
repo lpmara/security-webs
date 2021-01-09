@@ -46,6 +46,32 @@ export const Index = () => {
               <div className={styles.Text3}>&nbsp;&nbsp;&nbsp;&nbsp;เคยร่วมงานกับทีมบอดี้การ์ดของรัฐบาลดูแลทีมฟุตบอลมา 3 ทีม อาธิ Chelsea F.C., FC Barcelona, Manchester United F.C. บุคคลระหว่างประเทศ เคยดูแลท่านทูตญี่ปุ่น อาธิ ท่านทูตอาเจนติน่า ท่านทูตออสเตเรีย และรัฐมนตรีอเมริกา รองประธานาธิปบดีอเมริกา บุคคลทั่วไปนับไม่ถ้วนกับงาน Secret service อีกมากมายหลายคนในรอบ 26 ปีเดินทางไปมาแล้วหลายประเทศทั่วโลก</div>
             </div>
           </div>
+          <div className={styles.imagePicTCUFirst}>
+              <Image
+                  alt={'Image about TCU2'}
+                  src={'/images/about-us/326702.jpg'}
+                  width={988}
+                  height={752}
+                />
+            </div>
+          <div className={styles.flexTCU}>
+          <div className={styles.imagePicTCU}>
+              <Image
+                  alt={'Image about TCU1'}
+                  src={'/images/about-us/326700.jpg'}
+                  width={904}
+                  height={1204}
+                />
+            </div>
+            <div className={styles.imagePicTCU}>
+              <Image
+                  alt={'Image about TCU2'}
+                  src={'/images/about-us/326701.jpg'}
+                  width={904}
+                  height={1204}
+                />
+            </div>
+          </div>
           <div className={styles.flexImageContainer}>
             <div className={styles.imagePic}>
               <Image
@@ -93,6 +119,38 @@ export const Index = () => {
                   src={'/images/about-us/298021.jpg'}
                   width={1078}
                   height={756}
+                />
+            </div>
+            <div className={styles.imagePic}>
+            <Image
+                  alt={'Image about 7'}
+                  src={'/images/about-us/327753.jpg'}
+                  width={1078}
+                  height={756}
+                />
+            </div>
+            <div className={styles.imagePic}>
+            <Image
+                  alt={'Image about 8'}
+                  src={'/images/about-us/327754.jpg'}
+                  width={1078}
+                  height={756}
+                />
+            </div>
+            <div className={styles.imagePicL}>
+            <Image
+                  alt={'Image about 9'}
+                  src={'/images/about-us/326698.jpg'}
+                  width={980}
+                  height={1270}
+                />
+            </div>
+            <div className={styles.imagePicL}>
+            <Image
+                  alt={'Image about 9'}
+                  src={'/images/about-us/326699.jpg'}
+                  width={980}
+                  height={1270}
                 />
             </div>
           </div>

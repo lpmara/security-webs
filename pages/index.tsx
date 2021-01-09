@@ -17,9 +17,9 @@ export const Index = () => {
       {/* <AbsoluteImage /> */}
       <div className={styles.flexContainer}>
       
-        <div className={styles.Title}>Bodyguard VIP and Security Protection</div>
+        <div className={styles.Title}>Bodyguard VIP and Security Protection</div>https://youtu.be/mPOMqwfAodI
         <div className={styles.centerVideo}>
-          <ReactPlayer url="https://youtu.be/mPOMqwfAodI"  width='95%'
+          <ReactPlayer url="https://youtu.be/A-mToYDNsbo"  width='95%'
           height='720px'/>
         </div>
         <div className={styles.firstContent}>
@@ -43,6 +43,9 @@ export const Index = () => {
               <div className={styles.textContent}>
                 <div>บริษัทของเรา ขอนำเสนอบริการดูแลและคุ้มกันบุคคลสำคัญ(Vip)</div>
                 <div>ระดับการดูแลตั้งแต่พื้นฐานจนถึงระดับสูงสุด(24 ช.ม)</div>
+              </div>
+              <div className={styles.centerVideo}>
+                <ReactPlayer url="https://youtu.be/kH7Jsu4GBNs"  width='95%' height='440px'/>
               </div>
               <div className={styles.imageOptimize1}>
               <Image

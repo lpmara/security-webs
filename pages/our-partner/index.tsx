@@ -72,22 +72,38 @@ export const Index = () => {
     {
       imagePath: '/images/partner/logo022.png',
     },
+    {
+      imagePath: '/images/partner/logo023.png',
+    },
+    {
+      imagePath: '/images/partner/logo024.png',
+    },
+    {
+      imagePath: '/images/partner/logo025.png',
+    },
+    {
+      imagePath: '/images/partner/logo026.png',
+    },
+    {
+      imagePath: '/images/partner/logo027.png',
+    },
   ];
 
   return (
     <>
       <NavBar />
       <div className={styles.percentClass}>
+      <div className={styles.bannerConainer}></div>
         <div className={styles.MainContainer}>
-          <Image
-            className={styles.bannerImage}
-            src="/images/soldier-army2.jpg"
+          <Image className={styles.centerImage}
+            src="/images/partner/326710-removebg-preview.png"
             alt="secue-logo2"
-            width={1920}
-            height={1080}
+            width={500}
+            height={500}
           />
           <div className={styles.historyTextContainer}>
             <div className={styles.titleHistory}>Our Partner</div>
+            <div className={styles.descriptHistory}>พันธมิตรของเรา มีอยู่ทั่วโลก และเปี่ยมด้วยคุณภาพ</div>
             <div className={styles.ImageContainer}>
               {partnerImage.map((data, index) => (
                 <div key={index} className={styles.bannerImage}>
