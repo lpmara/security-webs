@@ -9,13 +9,15 @@ export const Index = () => {
       <div className={styles.mainBackgroundLayer}>
         <div className={styles.flexContainer}>
           <div className={styles.leftSideContent}> 
-            <div className={styles.detailText}>Our Service</div>
+            <div className={styles.detailText}>Services We Offer</div>
             <div className={styles.detail1}>
-                <div>บริษัทของเรา ขอนำเสนอบริการดูแลและคุ้มกันบุคคลสำคัญ(Vip)</div>
-                <div>ระดับการดูแลตั้งแต่พื้นฐานจนถึงระดับสูงสุด(24 ช.ม)</div>
+                <div>We offer a variety of high-quality Security, close protection services and training to ensure high-quality security for businesses            
+companies, diplomats, people, and VIPs in a different range of environments. We providing the most professional	              
+and cost-effective training and security services in Europe and the Middle East.</div>
             </div>
             <div className={styles.detail2}>
-                <div>บริษัทของเรามีประสบการณ์การดูแลอารักขาบุคคลสำคัญเกินกว่า 26ปี โดยผู้มีประสบการณ์ที่ผ่านการฝึกอบรมการรักษาความปลอดภัยมาอย่างเข้มข้น ตามหลักมาตราฐานสากล และมีประสบการณ์ การดูแลบุคคลสำคัญ มากกว่า "700" คน ทั่วโลก อาทิ นักการเมือง ,นักธุรกิจ ,ดาราศิลปิน ,จนถึงนักกีฬาอาชีพขอบคุณที่ไว้วางใจเราดูแลท่าน เมื่อท่านใช้บริการของเรา "เราปกป้องท่านด้วยชีวิต"</div>
+                <div>
+Years ago, and after some investigating and intense planning, International VIP Bodyguard was born. Our number one goal is to provide high-quality Security, Close protection services and training.</div>
             </div>
           </div>
           <div className={styles.rightSideContent}>
@@ -23,17 +25,27 @@ export const Index = () => {
                 {/* <div>Bodyguard VIP And Security Protection</div>  */}
                 {/* <div style={{paddingLeft: '15px'}}></div> */}
             </div>
-              {/* <div className={styles.detailText}>
+              <div className={styles.detailText}>
                 <div className={styles.textDetail}>
                 <Image
+loading={'eager'}
+                alt={'Professional center image'}
+                src={'/images/koo1_preview_rev_1.png'}
+                width={418}
+                height={599}
+              />
+                </div>
+                {/* <div className={styles.textDetail2}>
+
+              <Image
 loading={'eager'}
                 alt={'Professional center image'}
                 src={'/images/beer001_preview_rev_1.png'}
                 width={561}
                 height={445}
               />
-                </div>
-              </div> */}
+                </div> */}
+              </div>
           </div>
         </div>
       </div>

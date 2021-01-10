@@ -64,32 +64,32 @@ export const Index = () => {
   <ul className={styles.ulContainer}>
     <li>
       <Link href="/">
-        <label>Home</label>
+        <label>หน้าแรก</label>
       </Link>
     </li>
     <li>
       <Link href="/our-partner">
-        <label>Our Partner</label>
+        <label>พาร์ทเนอร์</label>
       </Link>
     </li>
     <li>
       <Link href="/our-service">
-        <label>Our Works</label>
+        <label>บริการของเรา</label>
       </Link>
     </li>
     <li>
       <Link href="/contact-us">
-        <label>Contact Us</label>
+        <label>ติดต่อเรา</label>
       </Link>
     </li>
     <li>
       <Link href="/about-us">
-        <label>About Us</label>
+        <label>เกี่ยวกับเรา</label>
       </Link>
     </li>
     <li>
       <Link href="/join-us">
-        <label>Join Us</label>
+        <label>ร่วมงานกับเรา</label>
       </Link>
     </li>
   </ul>
@@ -138,32 +138,32 @@ loading={'eager'}
           <div className={styles.centerLink}>
             <Link href="/">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleHome}>Home</div>
+                <div className={styles.TitleHome}>หน้าแรก</div>
               </span>
             </Link>
             <Link href="/our-partner">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleWork}>Our Partner</div>
+                <div className={styles.TitleWork}>พาร์ทเนอร์</div>
               </span>
             </Link>
             <Link href="/our-service">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleWork}>Our Works</div>
+                <div className={styles.TitleWork}>บริการของเรา</div>
               </span>
             </Link>
             <Link href="/contact-us">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleContact}>Contact Us</div>
+                <div className={styles.TitleContact}>ติดต่อเรา</div>
               </span>
             </Link>
             <Link href="/about-us">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleAbout}>About Us</div>
+                <div className={styles.TitleAbout}>เกี่ยวกับเรา</div>
               </span>
             </Link>
             <Link href="/join-us">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleJoin}>Join Us</div>
+                <div className={styles.TitleJoin}>ร่วมงานกับเรา</div>
               </span>
             </Link>
           </div>

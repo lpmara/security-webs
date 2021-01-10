@@ -2,7 +2,7 @@
 .MainContainer {
   padding-top: 135px;
   padding-bottom: 100px;
-  background: url('/images/backg1.jpg');
+  background: #f3f3f3;
   height: 100%;
   /* Center and scale the image nicely */
   background-position: center;
@@ -11,15 +11,19 @@
   // background-image: linear-gradient(white 80%, #c7e5fc);
   // background-color: #c7e5fc;
   .bannerConainer {
-    background: url('/images/231983.jpg');
+    width: 100%;
+    background: url('/images/new-banner-long.jpg') no-repeat 95% 15%;
+    box-shadow: 0 3px 12px 0 #ebebeb;
     background-attachment: fixed;
-    height: 400px;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    height: 500px;
   }
   .flexContainer {
     padding-top: 50px;
-    width: 1550px;
+    width: 1366px;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     .Title {
       font-weight: 900;
       text-align: center;
@@ -39,7 +43,7 @@
       display:flex;
       justify-content: space-around;
       .leftContent {
-        width: 30%;
+        width: 20%;
         .imagePaddTop {
           padding-bottom: 40px;
         }
@@ -48,34 +52,49 @@
         }
       }
       .rightContent {
-        width: 60%;
+        width: 80%;
+        margin-left: 5%;
         .textContent {
-          color: whitesmoke;
-          font-size: 30px;
+          color: #2b2b2b;
+          font-size: 2.7rem;
           div {
-            text-align: center;
+            text-align: left;
           }
         }
-        .textGarutee {
-          // padding-top: 10px;
-          text-align: center;
-          color: red;
-          font-size: 30px;
+        .messageContent {
+          p {
+            color: #55585a;
+            text-align: left;
+            font-size: 2rem;
+            line-height: 2.6rem;
+          }
         }
         .imageOptimize1 {
-          padding-top: 50px;
+          // padding-top: 50px;
+          width: 30%;
+          margin: 0 auto;
           img {
-            padding-left:220px;
-            margin: 0 auto;
-          }
-        }
-        .imageOptimize {
-          padding-top: 10px;
-          img {
-            border-radius: 20px;
+            // padding-left:220px;
+            width: 100%;
+            
           }
         }
       }
+    }
+  }
+  .textGarutee {
+    padding-top: 40px;
+    text-align: center;
+    color: red;
+    font-size: 30px;
+  }
+  .imageOptimize {
+    margin: 0 auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    img {
+      border-radius: 20px;
     }
   }
 }
