@@ -22,11 +22,18 @@ export const Index = ({ ImageSwitch }: ImageSwitch) => {
         <div className={styles.flexContainer}>
           <div className={styles.leftSideContanier}>
             <Image
-loading={'eager'}
+              loading={'eager'}
               alt={'Image left side'}
               src={ImageSwitch.imagePath}
-              width={1876}
-              height={872}
+              width={872}
+              height={1878}
+            />
+            <Image
+              loading={'eager'}
+              alt={'Image left side'}
+              src={'/images/our-work/231957.jpg'}
+              width={872}
+              height={1878}
             />
           </div>
           <div className={styles.rightSideContanier}>

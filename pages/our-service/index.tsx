@@ -1,12 +1,35 @@
 import React from 'react';
 import styles from './our-service.less';
+import '../../public/styles/custom.less';
+import '../../public/styles/font.less';
 import NavBar from '../../components/navbar';
 import ImageSwitch from '../../components/image-switch';
 import Image from 'next/image';
+import ImageGallery from 'react-image-gallery';
 export const Index = () => {
+
+  const images = [
+    {
+      original: '/images/our-work/231954.jpg',
+      thumbnail: '/images/our-work/231954.jpg',
+    },
+    {
+      original: '/images/our-work/231996.jpg',
+      thumbnail: '/images/our-work/231996.jpg',
+    },
+    {
+      original: '/images/our-work/withV1.png',
+      thumbnail: '/images/our-work/withV1.png',
+    },
+    {
+      original: '/images/our-work/232106.jpg',
+      thumbnail: '/images/our-work/232106.jpg',
+    },
+  ];
+
   const ImageSwitchSide = [
     {
-      imagePath: '/images/our-service/232016.jpg',
+      imagePath: '/images/our-work/231958.jpg',
       title: 'Personal Security Service',
       titleColor: 'whitesmoke',
       detail1:
@@ -23,6 +46,15 @@ export const Index = () => {
         <div className={styles.bannerConainer}></div>
         <div className={styles.flexContainer}>
           <div className={styles.titleName}>Our Service</div>
+          <div className={styles.MainNew1}>
+          <Image
+                loading={'eager'}
+                alt={'Image123445'}
+                src={'/images/our-work/231960.jpg'}
+                width={1876}
+                height={872}
+              />
+          </div>
           <ImageSwitch ImageSwitch={ImageSwitchSide[0]} />
           <div className={styles.firstContent}>
             <div className={styles.contentTextMain}>
@@ -43,9 +75,9 @@ export const Index = () => {
             </div>
             <div className={styles.contentImageMain}>
               <Image
-loading={'eager'}
+                loading={'eager'}
                 alt={'Image1234'}
-                src={'/images/our-service/231982.jpg'}
+                src={'/images/our-work/232111.jpg'}
                 width={1876}
                 height={872}
               />
@@ -54,11 +86,11 @@ loading={'eager'}
           <div className={styles.secondContent}>
             <div className={styles.contentImageMain}>
             <Image
-loading={'eager'}
+                loading={'eager'}
                 alt={'Image1234'}
-                src={'/images/our-service/232002.jpg'}
-                width={1876}
-                height={872}
+                src={'/images/our-work/elephen001.png'}
+                width={460}
+                height={621}
               />
             </div>
             <div className={styles.gapCenter}></div>
@@ -78,7 +110,16 @@ loading={'eager'}
                 <div className={styles.divPadding}>
                   <div>9. รับบริการทั้งในและนอกประเทศ Agent ทุกคนมีตราประจำตัว</div>
                   <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;เรามี Partner อยู่ทั่วโลกคอยบริการท่าน </div>
-               
+                </div>
+                <div>
+                <ImageGallery items={images} />
+                {/* <Image
+                  loading={'eager'}
+                  alt={'Image1234'}
+                  src={'/images/our-work/232106.jpg'}
+                  width={1108}
+                  height={1477}
+                /> */}
                 </div>
             </div>
           </div>

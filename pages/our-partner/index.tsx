@@ -3,6 +3,8 @@ import Image from 'next/image';
 import styles from './our-partner.less';
 import Layout from '../../components/layout';
 import NavBar from '../../components/navbar';
+import '../../public/styles/font.less';
+import ReactPlayer from 'react-player';
 // import '../public/styles/global.less';
 export const Index = () => {
   const partnerImage = [
@@ -87,6 +89,72 @@ export const Index = () => {
     {
       imagePath: '/images/partner/logo027.png',
     },
+    {
+      imagePath: '/images/partner/logo028.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo029.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo030.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo031.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo032.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo033.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo034.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo035.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo036.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo037.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo038.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo039.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo040.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo041.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo042.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo043.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo044.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo045.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo046.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo047.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo048.jpg',
+    },
+    {
+      imagePath: '/images/partner/logo49.jpg',
+    },
   ];
 
   return (
@@ -95,13 +163,18 @@ export const Index = () => {
       <div className={styles.percentClass}>
       <div className={styles.bannerConainer}></div>
         <div className={styles.MainContainer}>
-          <Image
-loading={'eager'} className={styles.centerImage}
+          <div className={styles.flexVedio}>
+              <ReactPlayer className={styles.marginToo} url="https://www.youtube.com/watch?v=kH7Jsu4GBNs"  width='48%' height='400px'/> 
+              <Image
+            loading={'eager'} className={styles.centerImage}
             src="/images/partner/326710-removebg-preview.png"
             alt="secue-logo2"
             width={500}
             height={500}
           />
+         
+          </div>
+        
           <div className={styles.historyTextContainer}>
             <div className={styles.titleHistory}>Our Partner</div>
             <div className={styles.descriptHistory}>พันธมิตรของเรา มีอยู่ทั่วโลก และเปี่ยมด้วยคุณภาพ</div>

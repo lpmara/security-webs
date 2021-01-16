@@ -3,6 +3,8 @@ import styles from './about-us.less';
 import NavBar from '../../components/navbar';
 import ImageSwitch from '../../components/image-switch';
 import Image from 'next/image';
+import '../../public/styles/font.less';
+import ModalImage from "react-modal-image";
 export const Index = () => {
   return (
     <>
@@ -58,118 +60,604 @@ loading={'eager'}
                 />
             </div>
           <div className={styles.flexTCU}>
-          <div className={styles.imagePicTCU}>
-              <Image
-loading={'eager'}
-                  alt={'Image about TCU1'}
-                  src={'/images/about-us/326700.jpg'}
-                  width={904}
-                  height={1204}
-                />
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246668.jpg'}
+                medium={'/images/about-us/246668.jpg'}
+                alt="im0001"
+              />
             </div>
-            <div className={styles.imagePicTCU}>
-              <Image
-loading={'eager'}
-                  alt={'Image about TCU2'}
-                  src={'/images/about-us/326701.jpg'}
-                  width={904}
-                  height={1204}
-                />
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246669.jpg'}
+                medium={'/images/about-us/246669.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246670.jpg'}
+                medium={'/images/about-us/246670.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246671.jpg'}
+                medium={'/images/about-us/246671.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246676.jpg'}
+                medium={'/images/about-us/246676.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246672.jpg'}
+                medium={'/images/about-us/246672.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246673.jpg'}
+                medium={'/images/about-us/246673.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246674.jpg'}
+                medium={'/images/about-us/246674.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246675.jpg'}
+                medium={'/images/about-us/246675.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246687.jpg'}
+                medium={'/images/about-us/246687.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246678.jpg'}
+                medium={'/images/about-us/246678.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246684.jpg'}
+                medium={'/images/about-us/246684.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246685.jpg'}
+                medium={'/images/about-us/246685.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246692.jpg'}
+                medium={'/images/about-us/246692.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246688.jpg'}
+                medium={'/images/about-us/246688.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246689.jpg'}
+                medium={'/images/about-us/246689.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246686.jpg'}
+                medium={'/images/about-us/246686.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246693.jpg'}
+                medium={'/images/about-us/246693.jpg'}
+                alt="im0001"
+              />
+            </div>
+
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246694.jpg'}
+                medium={'/images/about-us/246694.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246695.jpg'}
+                medium={'/images/about-us/246695.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246697.jpg'}
+                medium={'/images/about-us/246697.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246698.jpg'}
+                medium={'/images/about-us/246698.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246699.jpg'}
+                medium={'/images/about-us/246699.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246700.jpg'}
+                medium={'/images/about-us/246700.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246701.jpg'}
+                medium={'/images/about-us/246701.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246702.jpg'}
+                medium={'/images/about-us/246702.jpg'}
+                alt="im0001"
+              />
+            </div>
+
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246703.jpg'}
+                medium={'/images/about-us/246703.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246707.jpg'}
+                medium={'/images/about-us/246707.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246708.jpg'}
+                medium={'/images/about-us/246708.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246709.jpg'}
+                medium={'/images/about-us/246709.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246710.jpg'}
+                medium={'/images/about-us/246710.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246711.jpg'}
+                medium={'/images/about-us/246711.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246712.jpg'}
+                medium={'/images/about-us/246712.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246713.jpg'}
+                medium={'/images/about-us/246713.jpg'}
+                alt="im0001"
+              />
+            </div>
+
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246714.jpg'}
+                medium={'/images/about-us/246714.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246715.jpg'}
+                medium={'/images/about-us/246715.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246716.jpg'}
+                medium={'/images/about-us/246716.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246737.jpg'}
+                medium={'/images/about-us/246737.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246738.jpg'}
+                medium={'/images/about-us/246738.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246739.jpg'}
+                medium={'/images/about-us/246739.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246756.jpg'}
+                medium={'/images/about-us/246756.jpg'}
+                alt="im0001"
+              />
+            </div>
+
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246757.jpg'}
+                medium={'/images/about-us/246757.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246758.jpg'}
+                medium={'/images/about-us/246758.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246759.jpg'}
+                medium={'/images/about-us/246759.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246760.jpg'}
+                medium={'/images/about-us/246760.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246761.jpg'}
+                medium={'/images/about-us/246761.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246762.jpg'}
+                medium={'/images/about-us/246762.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246763.jpg'}
+                medium={'/images/about-us/246763.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246764.jpg'}
+                medium={'/images/about-us/246764.jpg'}
+                alt="im0001"
+              />
+            </div>
+
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246765.jpg'}
+                medium={'/images/about-us/246765.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246766.jpg'}
+                medium={'/images/about-us/246766.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246767.jpg'}
+                medium={'/images/about-us/246767.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246768.jpg'}
+                medium={'/images/about-us/246768.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246769.jpg'}
+                medium={'/images/about-us/246769.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246770.jpg'}
+                medium={'/images/about-us/246770.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246771.jpg'}
+                medium={'/images/about-us/246771.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246774.jpg'}
+                medium={'/images/about-us/246774.jpg'}
+                alt="im0001"
+              />
+            </div>
+
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246775.jpg'}
+                medium={'/images/about-us/246775.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246780.jpg'}
+                medium={'/images/about-us/246780.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246784.jpg'}
+                medium={'/images/about-us/246784.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246799.jpg'}
+                medium={'/images/about-us/246799.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246809.jpg'}
+                medium={'/images/about-us/246809.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246810.jpg'}
+                medium={'/images/about-us/246810.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246811.jpg'}
+                medium={'/images/about-us/246811.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/258944.jpg'}
+                medium={'/images/about-us/258944.jpg'}
+                alt="im0001"
+              />
+            </div>
+
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/258945.jpg'}
+                medium={'/images/about-us/258945.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/258946.jpg'}
+                medium={'/images/about-us/258946.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/298019.jpg'}
+                medium={'/images/about-us/298019.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/298020.jpg'}
+                medium={'/images/about-us/298020.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/298021.jpg'}
+                medium={'/images/about-us/298021.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/298022.jpg'}
+                medium={'/images/about-us/298022.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/298023.jpg'}
+                medium={'/images/about-us/298023.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/298024.jpg'}
+                medium={'/images/about-us/298024.jpg'}
+                alt="im0001"
+              />
+            </div>
+
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/298025.jpg'}
+                medium={'/images/about-us/298025.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/326698.jpg'}
+                medium={'/images/about-us/326698.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/326699.jpg'}
+                medium={'/images/about-us/326699.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/326700.jpg'}
+                medium={'/images/about-us/326700.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/326701.jpg'}
+                medium={'/images/about-us/326701.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/327753.jpg'}
+                medium={'/images/about-us/327753.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/327754.jpg'}
+                medium={'/images/about-us/327754.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246664.jpg'}
+                medium={'/images/about-us/246664.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246665.jpg'}
+                medium={'/images/about-us/246665.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246667.jpg'}
+                medium={'/images/about-us/246667.jpg'}
+                alt="im0001"
+              />
+            </div>
+            <div className={styles.imageBorder}>
+              <ModalImage
+                small={'/images/about-us/246718.jpg'}
+                medium={'/images/about-us/246718.jpg'}
+                alt="im0001"
+              />
             </div>
           </div>
-          <div className={styles.flexImageContainer}>
-            <div className={styles.imagePic}>
-              <Image
-loading={'eager'}
-                  alt={'Image about 1'}
-                  src={'/images/about-us/298019.jpg'}
-                  width={1078}
-                  height={756}
-                />
-            </div>
-            <div className={styles.imagePic}>
-            <Image
-loading={'eager'}
-                  alt={'Image about 2'}
-                  src={'/images/about-us/298020.jpg'}
-                  width={1078}
-                  height={756}
-                />
-            </div>
-            <div className={styles.imagePic}>
-            <Image
-loading={'eager'}
-                  alt={'Image about 3'}
-                  src={'/images/about-us/298022.jpg'}
-                  width={1078}
-                  height={756}
-                />
-            </div>
-            <div className={styles.imagePic}>
-            <Image
-loading={'eager'}
-                  alt={'Image about 4'}
-                  src={'/images/about-us/298024.jpg'}
-                  width={1078}
-                  height={756}
-                />
-            </div>
-            <div className={styles.imagePic}>
-            <Image
-loading={'eager'}
-                  alt={'Image about 5'}
-                  src={'/images/about-us/298023.jpg'}
-                  width={1078}
-                  height={756}
-                />
-            </div>
-            <div className={styles.imagePic}>
-            <Image
-loading={'eager'}
-                  alt={'Image about 6'}
-                  src={'/images/about-us/298021.jpg'}
-                  width={1078}
-                  height={756}
-                />
-            </div>
-            <div className={styles.imagePic}>
-            <Image
-loading={'eager'}
-                  alt={'Image about 7'}
-                  src={'/images/about-us/327753.jpg'}
-                  width={1078}
-                  height={756}
-                />
-            </div>
-            <div className={styles.imagePic}>
-            <Image
-loading={'eager'}
-                  alt={'Image about 8'}
-                  src={'/images/about-us/327754.jpg'}
-                  width={1078}
-                  height={756}
-                />
-            </div>
-            <div className={styles.imagePicL}>
-            <Image
-loading={'eager'}
-                  alt={'Image about 9'}
-                  src={'/images/about-us/326698.jpg'}
-                  width={980}
-                  height={1270}
-                />
-            </div>
-            <div className={styles.imagePicL}>
-            <Image
-loading={'eager'}
-                  alt={'Image about 9'}
-                  src={'/images/about-us/326699.jpg'}
-                  width={980}
-                  height={1270}
-                />
-            </div>
           </div>
-        </div>
       </div>
     </>
   );

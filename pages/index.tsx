@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
+import '../public/styles/font.less';
 import styles from './index.module.less';
 import Layout from '../components/layout';
 import NavBar from '../components/navbar';

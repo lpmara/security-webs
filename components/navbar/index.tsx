@@ -78,6 +78,11 @@ export const Index = () => {
       </Link>
     </li>
     <li>
+      <Link href="/security-training">
+        <label>หลักสูตร</label>
+      </Link>
+    </li>
+    <li>
       <Link href="/contact-us">
         <label>ติดต่อเรา</label>
       </Link>
@@ -149,6 +154,11 @@ loading={'eager'}
             <Link href="/our-service">
               <span style={{ cursor: 'pointer' }}>
                 <div className={styles.TitleWork}>บริการของเรา</div>
+              </span>
+            </Link>
+            <Link href="/security-training">
+              <span style={{ cursor: 'pointer' }}>
+                <div className={styles.TitleContact}>หลักสูตร</div>
               </span>
             </Link>
             <Link href="/contact-us">

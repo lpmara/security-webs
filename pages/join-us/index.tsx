@@ -18,28 +18,30 @@ export const Index = () => {
               <div>มาร่วมเป็นส่วนหนึ่งของงาน บอดี้การ์ด รักษาความปลอดภัยให้กับบุคลสำคัญ</div>
               <div style={{paddingTop: '30px', textDecoration: 'underline'}}>ติดต่อ Mr.ken (+66) 89 496 2596</div>
             </div>
-            <div className={styles.vidExampleContainer}>
-                <div className={styles.vidTitleExample}>
-                    ตัวอย่าง วีดีโอการ ฝึกซ้อมของเรา
-                </div>
-                <div className={styles.centerVideo}>
-                  <ReactPlayer url="https://www.youtube.com/watch?v=vGGPhO0tHJs"  width='80%'
-                  height='660px'/>
-                </div>
+
+            <div className={styles.joinContainer}>
+            <Image
+                    loading={'eager'}
+                    src={'/images/join-us/330727.png'}
+                    alt={'image 0000'}
+                    width={434}
+                    height={575}
+                  />
             </div>
+
             <div className={styles.textExample}>
                 ตัวอย่าง บัตรประจำตัวบอดี้การ์ดของเรา
             </div>
             <div className={styles.imageCorp}>
             <Image
-loading={'eager'}
+                    loading={'eager'}
                     src={'/images/join-us/308633_censored.jpg'}
                     alt={'image 0000'}
                     width={650}
                     height={1063}
                   />
                    <Image
-loading={'eager'}
+                    loading={'eager'}
                     src={'/images/join-us/319855_censored.jpg'}
                     alt={'image 0000'}
                     width={650}
@@ -51,11 +53,11 @@ loading={'eager'}
             </div>
             <div className={styles.imageCorp}>
             <Image
-loading={'eager'}
+                    loading={'eager'}
                     src={'/images/join-us/309696.jpg'}
                     alt={'bodyguard register form'}
-                    width={925}
-                    height={1246}
+                    width={600}
+                    height={700}
                   />
             </div>
           </div>
