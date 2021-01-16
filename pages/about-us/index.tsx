@@ -64,6 +64,7 @@ loading={'eager'}
               <ModalImage
                 small={'/images/about-us/246668.jpg'}
                 medium={'/images/about-us/246668.jpg'}
+                large={'/images/about-us/246668.jpg'}
                 alt="im0001"
               />
             </div>
