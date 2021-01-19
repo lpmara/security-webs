@@ -1,18 +1,61 @@
-import React from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
 import '../public/styles/font.less';
 import styles from './index.module.less';
-import Layout from '../components/layout';
+// import Layout from '../components/layout';
 import NavBar from '../components/navbar';
 import AbsoluteImage from '../components/absoluteImage';
 import AbsoluteImage2 from '../components/absoluteImage2';
 import '../public/styles/global.less';
-
+// import RootContext from '../components/layout/RootContext';
 export const Index = () => {
+  // const [lang, setLang] = useState("TH")
+  const [textData, setTextData] = useState({
+    textTitle1: 'บริษัทของเราสามารถนำเสนอ บริการคุ้มกันบุคคลสำคัญ',
+    textTitle2: 'ในระดับสูงสุด ในประเทศไทยและทั่วโลก',
+    textTitle3: 'บริษัทเรา มีบุคลากรไว้พร้อมรองรับงานด้านต่างๆ เกี่ยวกับเรื่องการรักษาความปลอดภัยที่ท่านจะใช้บริการทุกอย่าง ซึ่งทางเรามีบุคลากรพร้อม โดยผ่านการฝึกหลักสูตรบอดี้การ์ดด้านการรักษาความภัย และบุคลากรของเราได้ผ่านการฝึก ทั้งการต่อสู้ด้วยมือปล่าว และการต่อสู้ด้วยอาวุธ และทางเรามี Partner อยู่ทั่วโลกพร้อมที่จะทำงานได้ทุกประเทศที่ท่านต้องการ เรามีสิ่งต่างๆไว้บริการท่าน ทั้งรถ ทั้งเรือ ทั้งเครื่องบิน และการบริการหาที่พักต่างๆให้กับลูกค้าด้วย',
+    textTitle4: 'การันตีด้วยทีมงานที่มีประสบการณ์ การคุ้มกันบุคลสำคัญจำนวนมาก'
+  })
+  const langChange = (lan) => {
+    switch (lan) {
+      case "TH" : {
+        setTextData({
+          textTitle1: 'บริษัทของเราสามารถนำเสนอ บริการคุ้มกันบุคคลสำคัญ',
+          textTitle2: 'ในระดับสูงสุด ในประเทศไทยและทั่วโลก',
+          textTitle3: 'บริษัทเรา มีบุคลากรไว้พร้อมรองรับงานด้านต่างๆ เกี่ยวกับเรื่องการรักษาความปลอดภัยที่ท่านจะใช้บริการทุกอย่าง ซึ่งทางเรามีบุคลากรพร้อม โดยผ่านการฝึกหลักสูตรบอดี้การ์ดด้านการรักษาความภัย และบุคลากรของเราได้ผ่านการฝึก ทั้งการต่อสู้ด้วยมือปล่าว และการต่อสู้ด้วยอาวุธ และทางเรามี Partner อยู่ทั่วโลกพร้อมที่จะทำงานได้ทุกประเทศที่ท่านต้องการ เรามีสิ่งต่างๆไว้บริการท่าน ทั้งรถ ทั้งเรือ ทั้งเครื่องบิน และการบริการหาที่พักต่างๆให้กับลูกค้าด้วย',
+          textTitle4: 'การันตีด้วยทีมงานที่มีประสบการณ์ การคุ้มกันบุคลสำคัญจำนวนมาก'
+        })
+        break;
+      }
+      case "EN" : {
+        setTextData({
+          textTitle1: 'Our company can offer personal escort service',
+          textTitle2: 'at the highest level in thailand and around the world',
+          textTitle3: 'Our company has personnel ready to support various tasks. About security that you will use all services. In which we have personnel ready Through training in the bodyguard course in security And our personnel have been trained Both fighting with hands And fighting with weapons and we have Partner around the world ready to work in any country you want. We have various things to serve you, both car, boat, and airplane And accommodation services for customers as well',
+          textTitle4: 'Guaranteed by an experienced team. The protection of many important people'
+        })
+        break;
+      }
+    }
+  }
+
+  useEffect(()=>{
+    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    langChange(localStorageOut);
+  },[])
+
+  const changLanguage = (lang) => {
+    const localStorageWord = localStorage.getItem('languageSecue') || "TH";
+    let langC = localStorageWord || lang;
+    langChange(langC);
+    console.log('localStorageWord! : ', localStorageWord)
+    
+  }
+
   return (
     <>
-    <NavBar />
+    <NavBar changeLanguage={changLanguage} />
     <div className={styles.MainContainer}>
     <div className={styles.bannerConainer}></div>
       <div className={styles.flexContainer}>
@@ -47,12 +90,12 @@ export const Index = () => {
           </div>
           <div className={styles.rightContent}>
               <div className={styles.textContent}>
-                <div>บริษัทของเราสามารถนำเสนอ บริการคุ้มกันบุคคลสำคัญ </div>
-                <div>ในระดับสูงสุด ในประเทศไทยและทั่วโลก</div>
+                <div>{textData.textTitle1}</div>
+                <div>{textData.textTitle2}</div>
               </div>
               <div className={styles.messageContent}>
                 <p>
-                บริษัทเรา มีบุคลากรไว้พร้อมรองรับงานด้านต่างๆ เกี่ยวกับเรื่องการรักษาความปลอดภัยที่ท่านจะใช้บริการทุกอย่าง ซึ่งทางเรามีบุคลากรพร้อม โดยผ่านการฝึกหลักสูตรบอดี้การ์ดด้านการรักษาความภัย และบุคลากรของเราได้ผ่านการฝึก ทั้งการต่อสู้ด้วยมือปล่าว และการต่อสู้ด้วยอาวุธ และทางเรามี Partner อยู่ทั่วโลกพร้อมที่จะทำงานได้ทุกประเทศที่ท่านต้องการ เรามีสิ่งต่างๆไว้บริการท่าน ทั้งรถ ทั้งเรือ ทั้งเครื่องบิน และการบริการหาที่พักต่างๆให้กับลูกค้าด้วย
+                {textData.textTitle3}
                 </p>
               </div>
               {/* <div className={styles.centerVideo}>
@@ -68,7 +111,7 @@ export const Index = () => {
                     />
               </div>
               <AbsoluteImage2 />
-              <div className={styles.textGarutee}>การันตีด้วยทีมงานที่มีประสบการณ์ การคุ้มกันบุคลสำคัญจำนวนมาก</div>
+              <div className={styles.textGarutee}>{textData.textTitle4}</div>
               <div className={styles.imageOptimize}>
               <Image
                     loading={'eager'}

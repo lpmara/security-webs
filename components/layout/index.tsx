@@ -1,32 +1,25 @@
-import React from 'react';
-import Image from 'next/image';
-import styles from './layout.less';
-import '../../public/styles/global.less';
-export const Index = () => {
+import React, { useEffect, useState } from 'react';
+import Navbar from '../navbar';
+import RootContext, { ContextInterface } from './RootContext';
+
+interface changeLanguageInterface {
+  changeLanguage: Function;
+}
+
+export const Index = ({changeLanguage}: changeLanguageInterface) => {
+  const [language, setLanguage] = useState("TH");
+
+  changeLanguage(language);
+  const context: ContextInterface = {
+    language: language,
+    setLanguage: setLanguage
+  };
+
+
   return (
-    <div className={styles.MainContainer}>
-      {/* <img src={'/images/logo1.png'} alt="secue-logo2" /> */}
-      {/* <img src={'/images/logo2.png'} alt="secue-logo2" /> */}
-      <div className={styles.centerContainer}>
-        <Image
-loading={'eager'}
-          className={styles.leftLogo}
-          src="/images/logo1.png"
-          alt="secue-logo2"
-          width={240}
-          height={240}
-        />
-        <Image
-loading={'eager'}
-          className={styles.rightLogo}
-          src="/images/logo2.png"
-          alt="secue-logo2"
-          width={240}
-          height={240}
-        />
-      </div>
-      
-    </div>
+    <RootContext.Provider value={context}>
+      <Navbar></Navbar>
+    </RootContext.Provider>
   );
 };
 

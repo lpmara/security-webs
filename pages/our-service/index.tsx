@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './our-service.less';
 import '../../public/styles/custom.less';
 import '../../public/styles/font.less';
@@ -7,6 +7,62 @@ import ImageSwitch from '../../components/image-switch';
 import Image from 'next/image';
 import ImageGallery from 'react-image-gallery';
 export const Index = () => {
+
+  const [textData, setTextData] = useState({
+    textdetail1: 'ด้วยประสบการณ์การดูแลอารักขาบุคคลสำคัญเกินกว่า 26ปี โดยผู้มีประสบการณ์ที่ผ่านการฝึกอบรมการรักษาความปลอดภัยมาอย่างเข้มข้น ตามหลักมาตราฐานสากล และมีประสบการณ์',
+    textdetail2: 'เรามีความสามารถใช้เทคโนโลยีด้านการรักษาความปลอดภัย เพื่อส่งเสริมให้ท่านมีความปลอดภัยสูงสุด เราสัญญาว่าชีวิต และทรัพย์สินของท่านจะปลอดภัย ใช้บริการของเรา',
+    textTitle1: '1. ดูแลความปลอดภัย ขั้นต่ำถึงสูงสุด มีบริการตั้งแต่ 10 ชั่วโมง - 24 ชั่วโมง',
+    textTitle2: '2. รับทำงานทั้งนอกเครื่องแบบ และ ในเครื่องแบบ',
+    textTitle3: '(สามารถปรับเปลี่ยนได้ตามสถานการณ์)',
+    textTitle4: '3. การทำงานแบบ มีอาวุธ และไม่มีอาวุธ (สามารถปรับเปลี่ยนได้ตามสถานการณ์)',
+    textTitle5: '4. รับงานในลักษณะของ Secret Service',
+    textTitle6: '5. สามารถจัดหา รถลีมูซีน เรือยอช เฮลิคอปเตอร์ และเครื่องบินส่วนตัว',
+    textTitle7: '6. มีบริการจัดหาที่พัก ตามความต้องการของลูกค้า',
+    textTitle8: '7. สามารถจัดหา Butler (Butler Service)',
+    textTitle9: '8. มีบริการบุคลากรที่ชำนาญการท่องเที่ยว และสถานที่ท่องเที่ยวต่าง',
+    textTitle10: '9. รับบริการทั้งในและนอกประเทศ Agent ทุกคนมีตราประจำตัว',
+    textTitle11: 'เรามี Partner อยู่ทั่วโลกคอยบริการท่าน',
+  })
+  const langChange = (lan) => {
+    switch (lan) {
+      case "TH" : {
+        setTextData({
+          textdetail1: 'ด้วยประสบการณ์การดูแลอารักขาบุคคลสำคัญเกินกว่า 26ปี โดยผู้มีประสบการณ์ที่ผ่านการฝึกอบรมการรักษาความปลอดภัยมาอย่างเข้มข้น ตามหลักมาตราฐานสากล และมีประสบการณ์',
+          textdetail2: 'เรามีความสามารถใช้เทคโนโลยีด้านการรักษาความปลอดภัย เพื่อส่งเสริมให้ท่านมีความปลอดภัยสูงสุด เราสัญญาว่าชีวิต และทรัพย์สินของท่านจะปลอดภัย ใช้บริการของเรา',
+          textTitle1: '1. ดูแลความปลอดภัย ขั้นต่ำถึงสูงสุด มีบริการตั้งแต่ 10 ชั่วโมง - 24 ชั่วโมง',
+          textTitle2: '2. รับทำงานทั้งนอกเครื่องแบบ และ ในเครื่องแบบ',
+          textTitle3: '(สามารถปรับเปลี่ยนได้ตามสถานการณ์)',
+          textTitle4: '3. การทำงานแบบ มีอาวุธ และไม่มีอาวุธ (สามารถปรับเปลี่ยนได้ตามสถานการณ์)',
+          textTitle5: '4. รับงานในลักษณะของ Secret Service',
+          textTitle6: '5. สามารถจัดหา รถลีมูซีน เรือยอช เฮลิคอปเตอร์ และเครื่องบินส่วนตัว',
+          textTitle7: '6. มีบริการจัดหาที่พัก ตามความต้องการของลูกค้า',
+          textTitle8: '7. สามารถจัดหา Butler (Butler Service)',
+          textTitle9: '8. มีบริการบุคลากรที่ชำนาญการท่องเที่ยว และสถานที่ท่องเที่ยวต่าง',
+          textTitle10: '9. รับบริการทั้งในและนอกประเทศ Agent ทุกคนมีตราประจำตัว',
+          textTitle11: 'เรามี Partner อยู่ทั่วโลกคอยบริการท่าน',
+        })
+        break;
+      }
+      case "EN" : {
+        setTextData({
+          textdetail1: 'With more than 26 years of experience in custody of important persons with extensive security training experience According to international standards And experienced',
+          textdetail2: 'We have the ability to use security technology. To promote your safety We promise life And your assets will be safe Use our service',
+          textTitle1: '1. Take care of safety Minimum to maximum Available from 10 hours to 24 hours.',
+          textTitle2: '2. Accepting work both under uniform and in uniform',
+          textTitle3: '(Can be adjusted according to the situation)',
+          textTitle4: '3. Work with weapons and without weapons (Can be adjusted according to the situation)',
+          textTitle5: '4. Get a job in the nature of Secret Service',
+          textTitle6: '5. Can supply limousines, yachts, helicopters and private planes.',
+          textTitle7: '6. Accommodation accommodation service available. According to customer requirements',
+          textTitle8: '7. Can supply Butler (Butler Service)',
+          textTitle9: '8. There is a service personnel specializing in tourism. And various tourist attractions',
+          textTitle10: '9. Receive service both inside and outside the country. Every Agent has an identity badge.',
+          textTitle11: 'We have partners all over the world to serve you.',
+        })
+        break;
+      }
+    }
+  }
 
   const images = [
     {
@@ -32,16 +88,14 @@ export const Index = () => {
       imagePath: '/images/our-work/231958.jpg',
       title: 'Personal Security Service',
       titleColor: 'whitesmoke',
-      detail1:
-        'ด้วยประสบการณ์การดูแลอารักขาบุคคลสำคัญเกินกว่า 26ปี โดยผู้มีประสบการณ์ที่ผ่านการฝึกอบรมการรักษาความปลอดภัยมาอย่างเข้มข้น ตามหลักมาตราฐานสากล และมีประสบการณ์',
-      detail2:
-        'เรามีความสามารถใช้เทคโนโลยีด้านการรักษาความปลอดภัย เพื่อส่งเสริมให้ท่านมีความปลอดภัยสูงสุด เราสัญญาว่าชีวิต และทรัพย์สินของท่านจะปลอดภัย ใช้บริการของเรา',
+      detail1: textData.textdetail1,
+      detail2: textData.textdetail2,
       side: 1,
     },
   ];
   return (
     <>
-      <NavBar />
+      <NavBar changeLanguage={langChange}/>
       <div className={styles.MainContainer}>
         <div className={styles.bannerConainer}></div>
         <div className={styles.flexContainer}>
@@ -59,18 +113,18 @@ export const Index = () => {
           <div className={styles.firstContent}>
             <div className={styles.contentTextMain}>
               <div className={styles.divPadding}>
-                  1. ดูแลความปลอดภัย ขั้นต่ำถึงสูงสุด มีบริการตั้งแต่ 10 ชั่วโมง - 24 ชั่วโมง
+                  {textData.textTitle1}
               </div>
               <div className={styles.divPadding}>
-                <div>2. รับทำงานทั้งนอกเครื่องแบบ และ ในเครื่องแบบ</div>
-                <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;(สามารถปรับเปลี่ยนได้ตามสถานการณ์)</div>
+                <div>{textData.textTitle2}</div>
+                <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;{textData.textTitle3}</div>
                    
               </div>
               <div className={styles.divPadding}>
-                  3. การทำงานแบบ มีอาวุธ และไม่มีอาวุธ (สามารถปรับเปลี่ยนได้ตามสถานการณ์)
+              {textData.textTitle4}
               </div>
               <div className={styles.divPadding}>
-                  4. รับงานในลักษณะของ Secret Service
+              {textData.textTitle5}
               </div>
             </div>
             <div className={styles.contentImageMain}>
@@ -96,20 +150,20 @@ export const Index = () => {
             <div className={styles.gapCenter}></div>
             <div className={styles.contentTextMain}>
               <div className={styles.divPadding}>
-                5. สามารถจัดหา รถลีมูซีน เรือยอช เฮลิคอปเตอร์ และเครื่องบินส่วนตัว
+              {textData.textTitle6}
                 </div>
                 <div className={styles.divPadding}>
-                6. มีบริการจัดหาที่พัก ตามความต้องการของลูกค้า
+                {textData.textTitle7}
                 </div>
                 <div className={styles.divPadding}>
-                7. สามารถจัดหา Butler (Butler Service)
+                {textData.textTitle8}
                 </div>
                 <div className={styles.divPadding}>
-                8. มีบริการบุคลากรที่ชำนาญการท่องเที่ยว และสถานที่ท่องเที่ยวต่าง
+                {textData.textTitle9}
                 </div>
                 <div className={styles.divPadding}>
-                  <div>9. รับบริการทั้งในและนอกประเทศ Agent ทุกคนมีตราประจำตัว</div>
-                  <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;เรามี Partner อยู่ทั่วโลกคอยบริการท่าน </div>
+                  <div>{textData.textTitle10}</div>
+                  <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;{textData.textTitle11} </div>
                 </div>
                 <div>
                 <ImageGallery items={images} />

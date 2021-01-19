@@ -1,10 +1,21 @@
-import React, {useState} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import Image from 'next/image';
 import styles from './navbar.less';
 import Link from 'next/link';
-export const Index = () => {
+// import RootContext from '../layout/RootContext';
+interface changeLanguageInterface {
+  changeLanguage?: Function;
+}
+export const Index = ({changeLanguage}:changeLanguageInterface) => {
+
+  const [language, setLanguage] = useState("TH")
+  
   const [toggleMenuMobile, setToggleMenuMobile] = useState(false);
 
+  const handleChangeLanguage = (lang) => {
+    localStorage.setItem('languageSecue', lang);
+    changeLanguage(lang)
+  }
   const mobileNav = <div className={styles.mobileContainer}>
     <div className={styles.navbarTitle}>
       <div className={styles.flexTopContainer}>
@@ -105,11 +116,18 @@ export const Index = () => {
     <div className={styles.centerContainer}>
       <div className={styles.topMenu}>
         <div className={styles.flexTopContainer}>
-          <div className={styles.emailText}>
-            bodyguard.5559@gmail.com
+          <div className={styles.flexTwoSide}>
+            <div className={styles.emailText}>
+              bodyguard.5559@gmail.com
+            </div>
+            <div className={styles.telNumber1}>(+66) 89 496 2596</div>
+            <div className={styles.telNumber2}>(+66) 82 283 9789</div>
           </div>
-          <div className={styles.telNumber1}>(+66) 89 496 2596</div>
-          <div className={styles.telNumber2}>(+66) 82 283 9789</div>
+          <div className={styles.flexLangauge}>
+            <div onClick={()=>handleChangeLanguage("TH")} className={styles.flagLanguageTH}>TH</div>
+            <div onClick={()=>handleChangeLanguage("EN")} className={styles.flagLanguageEN}>EN</div>
+          </div>
+          
         </div>
       </div>
       <div className={styles.bottomMenu}>
@@ -146,7 +164,7 @@ loading={'eager'}
                 <div className={styles.TitleHome}>หน้าแรก</div>
               </span>
             </Link>
-            <Link href="/our-partner">
+            <Link href="/our-partner" shallow={true}>
               <span style={{ cursor: 'pointer' }}>
                 <div className={styles.TitleWork}>พาร์ทเนอร์</div>
               </span>

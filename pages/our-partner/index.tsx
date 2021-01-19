@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Image from 'next/image';
 import styles from './our-partner.less';
 import Layout from '../../components/layout';
@@ -7,6 +7,27 @@ import '../../public/styles/font.less';
 import ReactPlayer from 'react-player';
 // import '../public/styles/global.less';
 export const Index = () => {
+
+  const [textData, setTextData] = useState({
+    textTitle1: 'พันธมิตรของเรา มีอยู่ทั่วโลก และเปี่ยมด้วยคุณภาพ'
+  })
+  const langChange = (lan) => {
+    switch (lan) {
+      case "TH" : {
+        setTextData({
+          textTitle1: 'พันธมิตรของเรา มีอยู่ทั่วโลก และเปี่ยมด้วยคุณภาพ'
+        })
+        break;
+      }
+      case "EN" : {
+        setTextData({
+          textTitle1: 'Our partner all over the world'
+        })
+        break;
+      }
+    }
+  }
+
   const partnerImage = [
     {
       imagePath: '/images/partner/logo001.png',
@@ -159,7 +180,7 @@ export const Index = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar changeLanguage={langChange} />
       <div className={styles.percentClass}>
       <div className={styles.bannerConainer}></div>
         <div className={styles.MainContainer}>
@@ -177,7 +198,7 @@ export const Index = () => {
         
           <div className={styles.historyTextContainer}>
             <div className={styles.titleHistory}>Our Partner</div>
-            <div className={styles.descriptHistory}>พันธมิตรของเรา มีอยู่ทั่วโลก และเปี่ยมด้วยคุณภาพ</div>
+            <div className={styles.descriptHistory}>{textData.textTitle1}</div>
             <div className={styles.ImageContainer}>
               {partnerImage.map((data, index) => (
                 <div key={index} className={styles.bannerImage}>

@@ -81,23 +81,38 @@ body {
       margin: 0 auto;
       color: white;
       display: flex;
-      justify-content: left;
+      justify-content: space-between;
       box-shadow: 0px 10px 50px 0px rgba(53, 82, 99, 0.09);
-      .emailText {
-        padding-left: 10px;
-        padding-right: 50px;
-        i.user {
-          &:before {
-            width: 20px;
-            height: 20px;
-            content: @fa-var-user;
+      .flexTwoSide{
+        display: flex;
+        justify-content: left;
+        .emailText {
+          padding-left: 10px;
+          padding-right: 50px;
+          i.user {
+            &:before {
+              width: 20px;
+              height: 20px;
+              content: @fa-var-user;
+            }
           }
         }
+        .telNumber1 {
+          padding-right: 50px;
+        }
+        .telNumber2 {
+        }
       }
-      .telNumber1 {
-        padding-right: 50px;
-      }
-      .telNumber2 {
+      .flexLangauge{
+        display: flex;
+        .flagLanguageTH {
+          cursor: pointer;
+          padding-right: 10px;
+        }
+        .flagLanguageEN {
+          cursor: pointer;
+          padding-right: 80px;
+        }
       }
     }
   }
@@ -171,18 +186,20 @@ body {
           width: 90%;
           display: flex;
           justify-content: space-around;
-          .emailText {
-            margin-top: 10px;
-            font-size: 2.4vw;
-          }
-          .telNumber1 {
-            margin-top: 10px;
-            font-size: 2.2vw;
-          }
-          .telNumber2 {
-            margin-top: 10px;
-            font-size: 2.2vw;
-          }
+          .flexTwoSide{
+            .emailText {
+              margin-top: 10px;
+              font-size: 2.4vw;
+            }
+            .telNumber1 {
+              margin-top: 10px;
+              font-size: 2.2vw;
+            }
+            .telNumber2 {
+              margin-top: 10px;
+              font-size: 2.2vw;
+            }
+          } 
         }
       }
       .navbarDetail {
