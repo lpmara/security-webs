@@ -8,14 +8,73 @@ interface changeLanguageInterface {
 }
 export const Index = ({changeLanguage}:changeLanguageInterface) => {
 
-  const [language, setLanguage] = useState("TH")
-  
+  const [colorTh, setColorTh] = useState("red");
+  const [colorEn, setColorEn] = useState("");
   const [toggleMenuMobile, setToggleMenuMobile] = useState(false);
+  const [textData, setTextData] = useState({
+    textDetail1: 'หน้าแรก',
+    textDetail2: 'พาร์ทเนอร์',
+    textDetail3: 'บริการของเรา',
+    textDetail4: 'หลักสูตร',
+    textDetail5: 'ติดต่อเรา',
+    textDetail6: 'เกี่ยวกับเรา',
+    textDetail7: 'ร่วมงานกับเรา',
+  })
 
+  
+  const changeLang = (currentLang) =>{
+    switch (currentLang) {
+      case "TH" : {
+        setTextData({
+          textDetail1: 'หน้าแรก',
+          textDetail2: 'พาร์ทเนอร์',
+          textDetail3: 'บริการของเรา',
+          textDetail4: 'หลักสูตร',
+          textDetail5: 'ติดต่อเรา',
+          textDetail6: 'เกี่ยวกับเรา',
+          textDetail7: 'ร่วมงานกับเรา',
+        })
+        break;
+      }
+      case "EN" : {
+        setTextData({
+          textDetail1: 'Home',
+          textDetail2: 'Partner',
+          textDetail3: 'Our Service',
+          textDetail4: 'Training',
+          textDetail5: 'Contact Us',
+          textDetail6: 'About Us',
+          textDetail7: 'Join Us',
+        })
+        break;
+      }
+    }
+  }
   const handleChangeLanguage = (lang) => {
     localStorage.setItem('languageSecue', lang);
     changeLanguage(lang)
+    changeLang(lang);
+    if(lang === 'TH'){
+      setColorTh('red');
+      setColorEn('');
+    }else{
+      setColorTh('');
+      setColorEn('red');
+    }
   }
+
+  useEffect(()=>{
+    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    changeLang(localStorageOut);
+    if(localStorageOut === 'EN'){
+      setColorTh('');
+      setColorEn('red');
+    }
+    
+    
+  }, []) 
+
+
   const mobileNav = <div className={styles.mobileContainer}>
     <div className={styles.navbarTitle}>
       <div className={styles.flexTopContainer}>
@@ -45,7 +104,7 @@ export const Index = ({changeLanguage}:changeLanguageInterface) => {
                   width={95}
                   height={52}
                 />
-                              <Image
+                 <Image
                   loading={'eager'}
                   className={styles.leftLogo}
                   src="/images/logo1.png"
@@ -75,37 +134,37 @@ export const Index = ({changeLanguage}:changeLanguageInterface) => {
   <ul className={styles.ulContainer}>
     <li>
       <Link href="/">
-        <label>หน้าแรก</label>
+        <label>{textData.textDetail1}</label>
       </Link>
     </li>
     <li>
       <Link href="/our-partner">
-        <label>พาร์ทเนอร์</label>
+        <label>{textData.textDetail2}</label>
       </Link>
     </li>
     <li>
       <Link href="/our-service">
-        <label>บริการของเรา</label>
+        <label>{textData.textDetail3}</label>
       </Link>
     </li>
     <li>
       <Link href="/security-training">
-        <label>หลักสูตร</label>
+        <label>{textData.textDetail4}</label>
       </Link>
     </li>
     <li>
       <Link href="/contact-us">
-        <label>ติดต่อเรา</label>
+        <label>{textData.textDetail5}</label>
       </Link>
     </li>
     <li>
       <Link href="/about-us">
-        <label>เกี่ยวกับเรา</label>
+        <label>{textData.textDetail6}</label>
       </Link>
     </li>
     <li>
       <Link href="/join-us">
-        <label>ร่วมงานกับเรา</label>
+        <label>{textData.textDetail7}</label>
       </Link>
     </li>
   </ul>
@@ -124,8 +183,8 @@ export const Index = ({changeLanguage}:changeLanguageInterface) => {
             <div className={styles.telNumber2}>(+66) 82 283 9789</div>
           </div>
           <div className={styles.flexLangauge}>
-            <div onClick={()=>handleChangeLanguage("TH")} className={styles.flagLanguageTH}>TH</div>
-            <div onClick={()=>handleChangeLanguage("EN")} className={styles.flagLanguageEN}>EN</div>
+            <div onClick={()=>handleChangeLanguage("TH")} className={styles.flagLanguageTH} style={{color:colorTh}}>TH</div>
+            <div onClick={()=>handleChangeLanguage("EN")} className={styles.flagLanguageEN} style={{color:colorEn}}>EN</div>
           </div>
           
         </div>
@@ -161,37 +220,37 @@ loading={'eager'}
           <div className={styles.centerLink}>
             <Link href="/">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleHome}>หน้าแรก</div>
+                <div className={styles.TitleHome}>{textData.textDetail1}</div>
               </span>
             </Link>
             <Link href="/our-partner" shallow={true}>
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleWork}>พาร์ทเนอร์</div>
+                <div className={styles.TitleWork}>{textData.textDetail2}</div>
               </span>
             </Link>
             <Link href="/our-service">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleWork}>บริการของเรา</div>
+                <div className={styles.TitleWork}>{textData.textDetail3}</div>
               </span>
             </Link>
             <Link href="/security-training">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleContact}>หลักสูตร</div>
+                <div className={styles.TitleContact}>{textData.textDetail4}</div>
               </span>
             </Link>
             <Link href="/contact-us">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleContact}>ติดต่อเรา</div>
+                <div className={styles.TitleContact}>{textData.textDetail5}</div>
               </span>
             </Link>
             <Link href="/about-us">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleAbout}>เกี่ยวกับเรา</div>
+                <div className={styles.TitleAbout}>{textData.textDetail6}</div>
               </span>
             </Link>
             <Link href="/join-us">
               <span style={{ cursor: 'pointer' }}>
-                <div className={styles.TitleJoin}>ร่วมงานกับเรา</div>
+                <div className={styles.TitleJoin}>{textData.textDetail7}</div>
               </span>
             </Link>
           </div>

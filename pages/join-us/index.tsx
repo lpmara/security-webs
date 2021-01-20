@@ -1,22 +1,58 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './join-us.less';
 import NavBar from '../../components/navbar';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
 export const Index = () => {
+
+  const [textData, setTextData] = useState({
+    textTitle1: 'ร่วมงานกับเรา',
+    textTitle2: 'มาร่วมเป็นส่วนหนึ่งของงาน บอดี้การ์ด รักษาความปลอดภัยให้กับบุคลสำคัญ',
+    textTitle3: 'ติดต่อ Mr.ken (+66) 89 496 2596',
+    textTitle4: 'ตัวอย่าง บัตรประจำตัวบอดี้การ์ดของเรา',
+    textTitle5: 'ฟอร์มสมัครสมาชิก',
+  })
+  const langChange = (lan) => {
+    switch (lan) {
+      case "TH" : {
+        setTextData({
+          textTitle1: 'ร่วมงานกับเรา',
+          textTitle2: 'มาร่วมเป็นส่วนหนึ่งของงาน บอดี้การ์ด รักษาความปลอดภัยให้กับบุคลสำคัญ',
+          textTitle3: 'ติดต่อ Mr.ken (+66) 89 496 2596',
+          textTitle4: 'ตัวอย่าง บัตรประจำตัวบอดี้การ์ดของเรา',
+          textTitle5: 'ฟอร์มสมัครสมาชิก',
+        })
+        break;
+      }
+      case "EN" : {
+        setTextData({
+          textTitle1: 'Work with us',
+          textTitle2: 'Become a part of the bodyguard event to keep important people safe.',
+          textTitle3: 'Contact Mr.ken (+66) 89 496 2596',
+          textTitle4: 'Example of our bodyguard card',
+          textTitle5: 'Example of registration form',
+        })
+        break;
+      }
+    }
+  }
+  useEffect(()=>{
+    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    langChange(localStorageOut);
+  },[])
   return (
     <>
-      <NavBar />
+      <NavBar changeLanguage={langChange} />
       <div className={styles.MainContainer}>
         <div className={styles.bannerConainer}></div>
         <div className={styles.MainBackground}>
           <div className={styles.flexContainerTop}>
             <div className={styles.title}>
-              ร่วมงานกับเรา
+              {textData.textTitle1}
             </div>
             <div className={styles.textNormal1}>
-              <div>มาร่วมเป็นส่วนหนึ่งของงาน บอดี้การ์ด รักษาความปลอดภัยให้กับบุคลสำคัญ</div>
-              <div style={{paddingTop: '30px', textDecoration: 'underline'}}>ติดต่อ Mr.ken (+66) 89 496 2596</div>
+              <div>{textData.textTitle2}</div>
+              <div style={{paddingTop: '30px', textDecoration: 'underline'}}>{textData.textTitle3}</div>
             </div>
 
             <div className={styles.joinContainer}>
@@ -30,7 +66,7 @@ export const Index = () => {
             </div>
 
             <div className={styles.textExample}>
-                ตัวอย่าง บัตรประจำตัวบอดี้การ์ดของเรา
+            {textData.textTitle4}
             </div>
             <div className={styles.imageCorp}>
             <Image
@@ -49,7 +85,7 @@ export const Index = () => {
                   />
             </div>
             <div className={styles.textExample}>
-                ฟอร์มสมัครสมาชิก
+            {textData.textTitle5}
             </div>
             <div className={styles.imageCorp}>
             <Image

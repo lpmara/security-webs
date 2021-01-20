@@ -10,12 +10,14 @@ import AbsoluteImage2 from '../components/absoluteImage2';
 import '../public/styles/global.less';
 // import RootContext from '../components/layout/RootContext';
 export const Index = () => {
-  // const [lang, setLang] = useState("TH")
+  // const [lang, setLang] = useState("TH");
   const [textData, setTextData] = useState({
     textTitle1: 'บริษัทของเราสามารถนำเสนอ บริการคุ้มกันบุคคลสำคัญ',
     textTitle2: 'ในระดับสูงสุด ในประเทศไทยและทั่วโลก',
     textTitle3: 'บริษัทเรา มีบุคลากรไว้พร้อมรองรับงานด้านต่างๆ เกี่ยวกับเรื่องการรักษาความปลอดภัยที่ท่านจะใช้บริการทุกอย่าง ซึ่งทางเรามีบุคลากรพร้อม โดยผ่านการฝึกหลักสูตรบอดี้การ์ดด้านการรักษาความภัย และบุคลากรของเราได้ผ่านการฝึก ทั้งการต่อสู้ด้วยมือปล่าว และการต่อสู้ด้วยอาวุธ และทางเรามี Partner อยู่ทั่วโลกพร้อมที่จะทำงานได้ทุกประเทศที่ท่านต้องการ เรามีสิ่งต่างๆไว้บริการท่าน ทั้งรถ ทั้งเรือ ทั้งเครื่องบิน และการบริการหาที่พักต่างๆให้กับลูกค้าด้วย',
-    textTitle4: 'การันตีด้วยทีมงานที่มีประสบการณ์ การคุ้มกันบุคลสำคัญจำนวนมาก'
+    textTitle4: 'การันตีด้วยทีมงานที่มีประสบการณ์ การคุ้มกันบุคลสำคัญจำนวนมาก',
+    textTitle5: 'บริการคุ้มกัน บริการจัดหาพาหนะส่วนตัว จัดหาที่พัก',
+    textTitle6: 'หลักสูตรครบถ้วน สำหรับบอดี้การ์ดมืออาชีพ',
   })
   const langChange = (lan) => {
     switch (lan) {
@@ -24,7 +26,9 @@ export const Index = () => {
           textTitle1: 'บริษัทของเราสามารถนำเสนอ บริการคุ้มกันบุคคลสำคัญ',
           textTitle2: 'ในระดับสูงสุด ในประเทศไทยและทั่วโลก',
           textTitle3: 'บริษัทเรา มีบุคลากรไว้พร้อมรองรับงานด้านต่างๆ เกี่ยวกับเรื่องการรักษาความปลอดภัยที่ท่านจะใช้บริการทุกอย่าง ซึ่งทางเรามีบุคลากรพร้อม โดยผ่านการฝึกหลักสูตรบอดี้การ์ดด้านการรักษาความภัย และบุคลากรของเราได้ผ่านการฝึก ทั้งการต่อสู้ด้วยมือปล่าว และการต่อสู้ด้วยอาวุธ และทางเรามี Partner อยู่ทั่วโลกพร้อมที่จะทำงานได้ทุกประเทศที่ท่านต้องการ เรามีสิ่งต่างๆไว้บริการท่าน ทั้งรถ ทั้งเรือ ทั้งเครื่องบิน และการบริการหาที่พักต่างๆให้กับลูกค้าด้วย',
-          textTitle4: 'การันตีด้วยทีมงานที่มีประสบการณ์ การคุ้มกันบุคลสำคัญจำนวนมาก'
+          textTitle4: 'การันตีด้วยทีมงานที่มีประสบการณ์ การคุ้มกันบุคลสำคัญจำนวนมาก',
+          textTitle5: 'บริการคุ้มกัน บริการจัดหาพาหนะส่วนตัว จัดหาที่พัก',
+          textTitle6: 'หลักสูตรครบถ้วน สำหรับบอดี้การ์ดมืออาชีพ',
         })
         break;
       }
@@ -33,7 +37,9 @@ export const Index = () => {
           textTitle1: 'Our company can offer personal escort service',
           textTitle2: 'at the highest level in thailand and around the world',
           textTitle3: 'Our company has personnel ready to support various tasks. About security that you will use all services. In which we have personnel ready Through training in the bodyguard course in security And our personnel have been trained Both fighting with hands And fighting with weapons and we have Partner around the world ready to work in any country you want. We have various things to serve you, both car, boat, and airplane And accommodation services for customers as well',
-          textTitle4: 'Guaranteed by an experienced team. The protection of many important people'
+          textTitle4: 'Guaranteed by an experienced team. The protection of many important people',
+          textTitle5: 'Bodyguard service , Providing private transport',
+          textTitle6: 'Complete course for professional bodyguards',
         })
         break;
       }
@@ -49,8 +55,6 @@ export const Index = () => {
     const localStorageWord = localStorage.getItem('languageSecue') || "TH";
     let langC = localStorageWord || lang;
     langChange(langC);
-    console.log('localStorageWord! : ', localStorageWord)
-    
   }
 
   return (
@@ -111,7 +115,107 @@ export const Index = () => {
                     />
               </div>
               <AbsoluteImage2 />
-              <div className={styles.textGarutee}>{textData.textTitle4}</div>
+
+          </div>
+        </div>
+
+        <div className={styles.traniContainer}>
+          <div className={styles.textTranier}>
+                {textData.textTitle5}
+              </div>
+              <div className={styles.imageTranier}>
+              <div className={styles.imageOptimiz}>
+              <Image 
+                    loading={'eager'}
+                    src={'/images/our-work/231958.jpg'}
+                    alt={'image 0003'}
+                    width={872}
+                    height={1878}
+                  />
+              </div>
+              <div className={styles.imageOptimiz}>
+              <Image
+                    loading={'eager'}
+                    src={'/images/our-work/231954.jpg'}
+                    alt={'image 0003'}
+                    width={872}
+                    height={1878}
+                  />
+              </div>
+              <div className={styles.imageOptimiz}>
+              <Image
+                    loading={'eager'}
+                    src={'/images/our-work/elephen001.png'}
+                    alt={'image 0003'}
+                    width={872}
+                    height={1878}
+                  />
+              </div>
+              </div>
+          </div>
+
+        <div className={styles.traniContainer}>
+          <div className={styles.textTranier}>
+          {textData.textTitle6}
+              </div>
+              <div className={styles.imageTranier}>
+              <div className={styles.imageOptimiz}>
+              <Image 
+                    loading={'eager'}
+                    src={'/images/our-work/gun-training/231982.jpg'}
+                    alt={'image 0003'}
+                    width={1878}
+                    height={872}
+                  />
+              </div>
+              <div className={styles.imageOptimiz}>
+              <Image
+                    loading={'eager'}
+                    src={'/images/our-work/self-defend/231986.jpg'}
+                    alt={'image 0003'}
+                    width={1878}
+                    height={872}
+                  />
+              </div>
+              <div className={styles.imageOptimiz}>
+              <Image
+                    loading={'eager'}
+                    src={'/images/our-work/bodyguard-sevice/232016.jpg'}
+                    alt={'image 0003'}
+                    width={1878}
+                    height={872}
+                  />
+              </div>
+              <div className={styles.imageOptimiz}>
+              <Image
+                    loading={'eager'}
+                    src={'/images/our-work/water-sevice/232009.jpg'}
+                    alt={'image 0003'}
+                    width={1878}
+                    height={872}
+                  />
+              </div>
+              <div className={styles.imageOptimiz}>
+              <Image
+                    loading={'eager'}
+                    src={'/images/our-work/umbella-service/231965.jpg'}
+                    alt={'image 0003'}
+                    width={1878}
+                    height={872}
+                  />
+              </div>
+              <div className={styles.imageOptimiz}>
+              <Image
+                    loading={'eager'}
+                    src={'/images/our-work/bodyguard-sevice/244522.jpg'}
+                    alt={'image 0003'}
+                    width={1878}
+                    height={872}
+                  />
+              </div> 
+              </div>
+          </div>
+          <div className={styles.textGarutee}>{textData.textTitle4}</div>
               <div className={styles.imageOptimize}>
               <Image
                     loading={'eager'}
@@ -121,8 +225,6 @@ export const Index = () => {
                     height={872}
                   />
               </div>
-          </div>
-        </div>
       </div>
     </div>
     </>

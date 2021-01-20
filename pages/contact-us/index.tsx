@@ -1,21 +1,48 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './contact-us.less';
 import NavBar from '../../components/navbar';
 import Image from 'next/image';
 export const Index = () => {
+
+  const [textData, setTextData] = useState({
+    textTitle1: 'บริษัทของเรา ขอนำเสนอบริการดูแลและคุ้มกันบุคคลสำคัญ(Vip)',
+    textTitle2: 'ระดับการดูแลตั้งแต่พื้นฐานจนถึงระดับสูงสุด(24 ช.ม)'
+  })
+  const langChange = (lan) => {
+    switch (lan) {
+      case "TH" : {
+        setTextData({
+          textTitle1: 'บริษัทของเรา ขอนำเสนอบริการดูแลและคุ้มกันบุคคลสำคัญ(Vip)',
+          textTitle2: 'ระดับการดูแลตั้งแต่พื้นฐานจนถึงระดับสูงสุด(24 ช.ม)'
+        })
+        break;
+      }
+      case "EN" : {
+        setTextData({
+          textTitle1: 'Our company offers a service for personal care and escort (Vip).',
+          textTitle2: 'The level of care from the basics to the highest level (24 hrs.)'
+        })
+        break;
+      }
+    }
+  }
+  useEffect(()=>{
+    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    langChange(localStorageOut);
+  },[])
   return (
     <>
-      <NavBar />
+      <NavBar changeLanguage={langChange} />
       <div className={styles.MainContainer}>
         <div className={styles.topImage}>
           <div className={styles.headerBannerContactUs}>
             <div className={styles.contactUsTitle}>Contact</div>
             <div className={styles.subTitle}>
-            บริษัทของเรา ขอนำเสนอบริการดูแลและคุ้มกันบุคคลสำคัญ(Vip)
+            {textData.textTitle1}
 
             </div>
             <div className={styles.subTitle}>
-            ระดับการดูแลตั้งแต่พื้นฐานจนถึงระดับสูงสุด(24 ช.ม){' '}
+            {textData.textTitle2}{' '}
               <span className={styles.callCenter}>
                 
               </span>

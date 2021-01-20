@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './our-service.less';
 import '../../public/styles/custom.less';
 import '../../public/styles/font.less';
@@ -63,7 +63,10 @@ export const Index = () => {
       }
     }
   }
-
+  useEffect(()=>{
+    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    langChange(localStorageOut);
+  },[])
   const images = [
     {
       original: '/images/our-work/231954.jpg',
@@ -95,7 +98,7 @@ export const Index = () => {
   ];
   return (
     <>
-      <NavBar changeLanguage={langChange}/>
+      <NavBar changeLanguage={langChange} />
       <div className={styles.MainContainer}>
         <div className={styles.bannerConainer}></div>
         <div className={styles.flexContainer}>
@@ -167,13 +170,6 @@ export const Index = () => {
                 </div>
                 <div>
                 <ImageGallery items={images} />
-                {/* <Image
-                  loading={'eager'}
-                  alt={'Image1234'}
-                  src={'/images/our-work/232106.jpg'}
-                  width={1108}
-                  height={1477}
-                /> */}
                 </div>
             </div>
           </div>

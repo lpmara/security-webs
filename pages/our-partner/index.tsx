@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
 import styles from './our-partner.less';
 import Layout from '../../components/layout';
@@ -27,6 +27,10 @@ export const Index = () => {
       }
     }
   }
+  useEffect(()=>{
+    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    langChange(localStorageOut);
+  },[])
 
   const partnerImage = [
     {
