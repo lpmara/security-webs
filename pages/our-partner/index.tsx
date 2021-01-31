@@ -61,9 +61,6 @@ export const Index = () => {
       imagePath: '/images/partner/logo009.png',
     },
     {
-      imagePath: '/images/partner/logo010.png',
-    },
-    {
       imagePath: '/images/partner/logo011.png',
     },
     {
@@ -74,9 +71,6 @@ export const Index = () => {
     },
     {
       imagePath: '/images/partner/logo014.png',
-    },
-    {
-      imagePath: '/images/partner/logo015.png',
     },
     {
       imagePath: '/images/partner/logo016.png',
@@ -180,6 +174,83 @@ export const Index = () => {
     {
       imagePath: '/images/partner/logo49.jpg',
     },
+
+    {
+      imagePath: '/images/partner/new/349186.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349187.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349188.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349189.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349203.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349204.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349205.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349206.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349208.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349209.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349210.jpg',
+    },
+
+    {
+      imagePath: '/images/partner/new/349211.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349212.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349214.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349215.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349216.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349217.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349218.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349246.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349247.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349252.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349257.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349381.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/349382.jpg',
+    },
+    {
+      imagePath: '/images/partner/new/351288.jpg',
+    }
   ];
 
   return (

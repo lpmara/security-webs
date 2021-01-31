@@ -5,6 +5,8 @@ import Image from 'next/image';
 import '../../public/styles/font.less';
 import ReactPlayer from 'react-player';
 import ModalImage from "react-modal-image";
+import Gallery from "react-photo-gallery";
+import {photos, photos2, photos3, photos4} from './photo';
 export const Index = () => {
 
     const [textData, setTextData] = useState({
@@ -132,90 +134,7 @@ export const Index = () => {
                                             <div>{textData.textTitle10}</div> 
                 </div>
                 <div className={styles.imageCourse}>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/232016.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/232016.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/232002.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/232002.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/232003.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/232003.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/232015.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/232015.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/231973.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/231973.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/231975.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/231975.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/232034.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/232034.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/231977.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/231977.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/231976.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/231976.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/232053.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/232053.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/232051.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/232051.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
-                    <div className={styles.imageBorder}>
-                    <ModalImage
-                        small={'/images/our-work/bodyguard-sevice/232055.jpg'}
-                        medium={'/images/our-work/bodyguard-sevice/232055.jpg'}
-                        alt="im0001"
-                        />
-                    </div>
+                    <Gallery photos={photos} margin={5} columns={4} direction={"column"} />
                 </div>
             </div>
             <div className={styles.courseContainer}>
@@ -227,69 +146,7 @@ export const Index = () => {
                                             <div>{textData.textTitle15}</div>
                 </div>
                 <div className={styles.imageCourse}>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/gun-training/231982.jpg'}
-                            medium={'/images/our-work/gun-training/231982.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/gun-training/232031.jpg'}
-                            medium={'/images/our-work/gun-training/232031.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/gun-training/231981.jpg'}
-                            medium={'/images/our-work/gun-training/231981.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/gun-training/232030.jpg'}
-                            medium={'/images/our-work/gun-training/232030.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/gun-training/232001.jpg'}
-                            medium={'/images/our-work/gun-training/232001.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/gun-training/232032.jpg'}
-                            medium={'/images/our-work/gun-training/232032.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/gun-training/330683.jpg'}
-                            medium={'/images/our-work/gun-training/330683.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/gun-training/330685.jpg'}
-                            medium={'/images/our-work/gun-training/330685.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/gun-training/330686.jpg'}
-                            medium={'/images/our-work/gun-training/330686.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
+                    <Gallery photos={photos2} margin={5} columns={4} direction={"column"} />
                 </div>
             </div>
             <div className={styles.courseContainer}>
@@ -302,70 +159,7 @@ export const Index = () => {
                                             <div>{textData.textTitle21}</div>    
                 </div>
                 <div className={styles.imageCourse}>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/self-defend/232005.jpg'}
-                            medium={'/images/our-work/self-defend/232005.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/self-defend/232004.jpg'}
-                            medium={'/images/our-work/self-defend/232004.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/self-defend/231986.jpg'}
-                            medium={'/images/our-work/self-defend/231986.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/self-defend/232033.jpg'}
-                            medium={'/images/our-work/self-defend/232033.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/self-defend/231989.jpg'}
-                            medium={'/images/our-work/self-defend/231989.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/self-defend/231990.jpg'}
-                            medium={'/images/our-work/self-defend/231990.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/self-defend/231991.jpg'}
-                            medium={'/images/our-work/self-defend/231991.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/self-defend/232006.jpg'}
-                            medium={'/images/our-work/self-defend/232006.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            className={styles.imgSS}
-                            small={'/images/our-work/self-defend/231974.jpg'}
-                            medium={'/images/our-work/self-defend/231974.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
+                    <Gallery photos={photos3} margin={5} columns={4} direction={"column"} />
                 </div>
             </div>
             <div className={styles.courseContainer}>
@@ -376,90 +170,7 @@ export const Index = () => {
    
                 </div>
                 <div className={styles.imageCourse}>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/water-sevice/232009.jpg'}
-                            medium={'/images/our-work/water-sevice/232009.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/water-sevice/710.jpg'}
-                            medium={'/images/our-work/water-sevice/710.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/water-sevice/711.jpg'}
-                            medium={'/images/our-work/water-sevice/711.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder} style={{marginTop: '-377px'}}>
-                        <ModalImage
-                            small={'/images/our-work/water-sevice/712.jpg'}
-                            medium={'/images/our-work/water-sevice/712.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/water-sevice/713.jpg'}
-                            medium={'/images/our-work/water-sevice/713.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/water-sevice/714.jpg'}
-                            medium={'/images/our-work/water-sevice/714.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder} style={{marginTop: '-377px'}}>
-                        <ModalImage
-                            small={'/images/our-work/water-sevice/715.jpg'}
-                            medium={'/images/our-work/water-sevice/715.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder} style={{marginTop: '-253px'}}>
-                        <ModalImage
-                            small={'/images/our-work/water-sevice/231995.jpg'}
-                            medium={'/images/our-work/water-sevice/231995.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/umbella-service/231965.jpg'}
-                            medium={'/images/our-work/umbella-service/231965.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder} style={{marginTop: '-477px'}}>
-                        <ModalImage
-                            small={'/images/our-work/umbella-service/231963.jpg'}
-                            medium={'/images/our-work/umbella-service/231963.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder}>
-                        <ModalImage
-                            small={'/images/our-work/umbella-service/231967.jpg'}
-                            medium={'/images/our-work/umbella-service/231967.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
-                    <div className={styles.imageBorder} style={{marginTop: '-477px'}}>
-                        <ModalImage
-                            small={'/images/our-work/umbella-service/231970.jpg'}
-                            medium={'/images/our-work/umbella-service/231970.jpg'}
-                            alt="im0001"
-                            />
-                    </div>
+                    <Gallery photos={photos4} margin={5} columns={4} direction={"column"} />
                 </div>
             </div>
           </div>
