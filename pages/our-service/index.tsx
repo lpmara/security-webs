@@ -6,11 +6,14 @@ import NavBar from '../../components/navbar';
 import ImageSwitch from '../../components/image-switch';
 import Image from 'next/image';
 import ImageGallery from 'react-image-gallery';
+import Gallery from "react-photo-gallery";
+import {photos, photos2} from './photo';
 export const Index = () => {
 
   const [textData, setTextData] = useState({
     textdetail1: 'ด้วยประสบการณ์การดูแลอารักขาบุคคลสำคัญเกินกว่า 26ปี โดยผู้มีประสบการณ์ที่ผ่านการฝึกอบรมการรักษาความปลอดภัยมาอย่างเข้มข้น ตามหลักมาตราฐานสากล และมีประสบการณ์',
     textdetail2: 'เรามีความสามารถใช้เทคโนโลยีด้านการรักษาความปลอดภัย เพื่อส่งเสริมให้ท่านมีความปลอดภัยสูงสุด เราสัญญาว่าชีวิต และทรัพย์สินของท่านจะปลอดภัย ใช้บริการของเรา',
+    textTitle0: 'บริการของเรา',
     textTitle1: '1. ดูแลความปลอดภัย ขั้นต่ำถึงสูงสุด มีบริการตั้งแต่ 10 ชั่วโมง - 24 ชั่วโมง',
     textTitle2: '2. รับทำงานทั้งนอกเครื่องแบบ และ ในเครื่องแบบ',
     textTitle3: '(สามารถปรับเปลี่ยนได้ตามสถานการณ์)',
@@ -29,6 +32,7 @@ export const Index = () => {
         setTextData({
           textdetail1: 'ด้วยประสบการณ์การดูแลอารักขาบุคคลสำคัญเกินกว่า 26ปี โดยผู้มีประสบการณ์ที่ผ่านการฝึกอบรมการรักษาความปลอดภัยมาอย่างเข้มข้น ตามหลักมาตราฐานสากล และมีประสบการณ์',
           textdetail2: 'เรามีความสามารถใช้เทคโนโลยีด้านการรักษาความปลอดภัย เพื่อส่งเสริมให้ท่านมีความปลอดภัยสูงสุด เราสัญญาว่าชีวิต และทรัพย์สินของท่านจะปลอดภัย ใช้บริการของเรา',
+          textTitle0: 'บริการของเรา',
           textTitle1: '1. ดูแลความปลอดภัย ขั้นต่ำถึงสูงสุด มีบริการตั้งแต่ 10 ชั่วโมง - 24 ชั่วโมง',
           textTitle2: '2. รับทำงานทั้งนอกเครื่องแบบ และ ในเครื่องแบบ',
           textTitle3: '(สามารถปรับเปลี่ยนได้ตามสถานการณ์)',
@@ -47,6 +51,7 @@ export const Index = () => {
         setTextData({
           textdetail1: 'With more than 26 years of experience in custody of important persons with extensive security training experience According to international standards And experienced',
           textdetail2: 'We have the ability to use security technology. To promote your safety We promise life And your assets will be safe Use our service',
+          textTitle0: 'Our service',
           textTitle1: '1. Take care of safety Minimum to maximum Available from 10 hours to 24 hours.',
           textTitle2: '2. Accepting work both under uniform and in uniform',
           textTitle3: '(Can be adjusted according to the situation)',
@@ -113,22 +118,10 @@ export const Index = () => {
               />
           </div>
           <ImageSwitch ImageSwitch={ImageSwitchSide[0]} />
+          
           <div className={styles.firstContent}>
             <div className={styles.contentTextMain}>
-              <div className={styles.divPadding}>
-                  {textData.textTitle1}
-              </div>
-              <div className={styles.divPadding}>
-                <div>{textData.textTitle2}</div>
-                <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;{textData.textTitle3}</div>
-                   
-              </div>
-              <div className={styles.divPadding}>
-              {textData.textTitle4}
-              </div>
-              <div className={styles.divPadding}>
-              {textData.textTitle5}
-              </div>
+            <Gallery photos={photos} margin={5} columns={3} direction={"column"} />
             </div>
             <div className={styles.contentImageMain}>
               <Image
@@ -138,20 +131,22 @@ export const Index = () => {
                 width={1876}
                 height={872}
               />
-            </div>
-          </div>
-          <div className={styles.secondContent}>
-            <div className={styles.contentImageMain}>
-            <Image
-                loading={'eager'}
-                alt={'Image1234'}
-                src={'/images/our-work/elephen001.png'}
-                width={460}
-                height={621}
-              />
-            </div>
-            <div className={styles.gapCenter}></div>
-            <div className={styles.contentTextMain}>
+              <div className={styles.divPadding} style={{paddingTop: '30px', fontSize: '28px'}}>
+                  {textData.textTitle0}
+              </div>
+              <div className={styles.divPadding} >
+                  {textData.textTitle1}
+              </div>
+              <div className={styles.divPadding}>
+                <div>{textData.textTitle2}</div>
+                <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;{textData.textTitle3}</div> 
+              </div>
+              <div className={styles.divPadding}>
+              {textData.textTitle4}
+              </div>
+              <div className={styles.divPadding}>
+              {textData.textTitle5}
+              </div>
               <div className={styles.divPadding}>
               {textData.textTitle6}
                 </div>
@@ -168,6 +163,15 @@ export const Index = () => {
                   <div>{textData.textTitle10}</div>
                   <div className={styles.hideDiv}>&nbsp;&nbsp;&nbsp;{textData.textTitle11} </div>
                 </div>
+            </div>
+          </div>
+          <Gallery photos={photos2} margin={5} columns={5} direction={"column"} />
+          <div className={styles.secondContent}>
+            <div className={styles.contentImageMain}>
+            
+            </div>
+            <div className={styles.gapCenter}></div>
+            <div className={styles.contentTextMain}>
                 <div>
                 <ImageGallery items={images} />
                 </div>
