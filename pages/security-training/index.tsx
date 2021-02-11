@@ -6,7 +6,7 @@ import '../../public/styles/font.less';
 import ReactPlayer from 'react-player';
 import ModalImage from "react-modal-image";
 import Gallery from "react-photo-gallery";
-import {photos, photos2, photos3, photos4} from './photo';
+import {photos, photos2, photos3, photos4} from '../../components/imagesComponent/photoTraining';
 export const Index = () => {
 
     const [textData, setTextData] = useState({

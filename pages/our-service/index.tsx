@@ -7,7 +7,7 @@ import ImageSwitch from '../../components/image-switch';
 import Image from 'next/image';
 import ImageGallery from 'react-image-gallery';
 import Gallery from "react-photo-gallery";
-import {photos, photos2} from './photo';
+import {photos, photos2} from '../../components/imagesComponent/photoService';
 export const Index = () => {
 
   const [textData, setTextData] = useState({

@@ -6,7 +6,7 @@ import Image from 'next/image';
 import '../../public/styles/font.less';
 import ModalImage from "react-modal-image";
 import Gallery from "react-photo-gallery";
-import {photos} from './photo';
+import {photos} from '../../components/imagesComponent/photoAboutus';
 
 export const Index = () => {
 
