@@ -111,6 +111,16 @@ export const photos = [
         width: 4,
         height: 6
     },
+    {
+        src: "/images/our-work/bodyguard-sevice/new/365681.jpg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "/images/our-work/bodyguard-sevice/new/365682.jpg",
+        width: 4,
+        height: 3
+    },
 ];
 
 export const photos2 = [

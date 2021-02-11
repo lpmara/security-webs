@@ -101,6 +101,13 @@ loading={'eager'}
           <div className={styles.imagePicTCUFirst}>
               <Image
                   loading={'eager'}
+                  alt={'certificate organize'}
+                  src={'/images/about-us/373329.jpg'}
+                  width={1076}
+                  height={1521}
+                />
+              <Image
+                  loading={'eager'}
                   alt={'Image about TCU2'}
                   src={'/images/about-us/326702.jpg'}
                   width={988}

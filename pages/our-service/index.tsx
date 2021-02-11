@@ -166,7 +166,7 @@ export const Index = () => {
             </div>
           </div>
           <Gallery photos={photos2} margin={5} columns={5} direction={"column"} />
-          <div className={styles.secondContent}>
+          {/* <div className={styles.secondContent}>
             <div className={styles.contentImageMain}>
             
             </div>
@@ -176,7 +176,7 @@ export const Index = () => {
                 <ImageGallery items={images} />
                 </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

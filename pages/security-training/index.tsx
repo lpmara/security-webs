@@ -23,8 +23,9 @@ export const Index = () => {
         textTitle11: 'การฝึกเกี่ยวกับอาวุธปืน',
         textTitle12: '1. ประเภทปืนและอุปกรณ์',
         textTitle13: '2. หลักเทคนิคการใช้ปืนพก',
-        textTitle14: '3. การใช้ปืนพกระบบป้องกันตัว',
-        textTitle15: '4. การใช้ปืนพกระบบต่อสู้',
+        textTitle13_1: '3. หลักเทคนิคการใช้ปืนยาว',
+        textTitle14: '4. การใช้ปืนพกระบบป้องกันตัว',
+        textTitle15: '5. การใช้ปืนพกระบบต่อสู้',
         textTitle16: 'การฝึกเกี่ยวกับศิลปะป้องกันตัว',
         textTitle17: '1. ศิลปการป้องกันตัวมือเปล่า',
         textTitle18: '2. การป้องกันตัวโดยใช้สิ่งของใกล้ตัว',
@@ -52,8 +53,9 @@ export const Index = () => {
                 textTitle11: 'การฝึกเกี่ยวกับอาวุธปืน',
                 textTitle12: '1. ประเภทปืนและอุปกรณ์',
                 textTitle13: '2. หลักเทคนิคการใช้ปืนพก',
-                textTitle14: '3. การใช้ปืนพกระบบป้องกันตัว',
-                textTitle15: '4. การใช้ปืนพกระบบต่อสู้',
+                textTitle13_1: '3. หลักเทคนิคการใช้ปืนยาว',
+                textTitle14: '4. การใช้ปืนพกระบบป้องกันตัว',
+                textTitle15: '5. การใช้ปืนพกระบบต่อสู้',
                 textTitle16: 'การฝึกเกี่ยวกับศิลปะป้องกันตัว',
                 textTitle17: '1. ศิลปการป้องกันตัวมือเปล่า',
                 textTitle18: '2. การป้องกันตัวโดยใช้สิ่งของใกล้ตัว',
@@ -81,8 +83,9 @@ export const Index = () => {
                 textTitle11: 'Firearms training',
                 textTitle12: '1. Types of guns and equipment',
                 textTitle13: '2. Main techniques of using handguns',
-                textTitle14: '3. Using a handgun, self defense system',
-                textTitle15: '4. The use of pistols, combat systems',
+                textTitle13_1: '3.Main Techniques for using a assult rifle',
+                textTitle14: '4. Using a handgun, self defense system',
+                textTitle15: '5. The use of pistols, combat systems',
                 textTitle16: 'Practicing martial arts',
                 textTitle17: '1. Free-handed martial arts',
                 textTitle18: '2. Self defense by using something close to you',
@@ -142,6 +145,7 @@ export const Index = () => {
                 <div className={styles.descriptCourse}>
                                             <div>{textData.textTitle12}</div>
                                             <div>{textData.textTitle13}</div>
+                                            <div>{textData.textTitle13_1}</div>
                                             <div>{textData.textTitle14}</div>
                                             <div>{textData.textTitle15}</div>
                 </div>
