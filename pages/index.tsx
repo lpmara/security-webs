@@ -12,12 +12,12 @@ import '../public/styles/global.less';
 export const Index = () => {
   // const [lang, setLang] = useState("TH");
   const [textData, setTextData] = useState({
-    textTitle1: 'บริษัทของเราสามารถนำเสนอ บริการคุ้มกันบุคคลสำคัญ',
-    textTitle2: 'ในระดับสูงสุด ในประเทศไทยและทั่วโลก',
-    textTitle3: 'บริษัทเรา มีบุคลากรไว้พร้อมรองรับงานด้านต่างๆ เกี่ยวกับเรื่องการรักษาความปลอดภัยที่ท่านจะใช้บริการทุกอย่าง ซึ่งทางเรามีบุคลากรพร้อม โดยผ่านการฝึกหลักสูตรบอดี้การ์ดด้านการรักษาความภัย และบุคลากรของเราได้ผ่านการฝึก ทั้งการต่อสู้ด้วยมือปล่าว และการต่อสู้ด้วยอาวุธ และทางเรามี Partner อยู่ทั่วโลกพร้อมที่จะทำงานได้ทุกประเทศที่ท่านต้องการ เรามีสิ่งต่างๆไว้บริการท่าน ทั้งรถ ทั้งเรือ ทั้งเครื่องบิน และการบริการหาที่พักต่างๆให้กับลูกค้าด้วย',
-    textTitle4: 'การันตีด้วยทีมงานที่มีประสบการณ์ การคุ้มกันบุคลสำคัญจำนวนมาก',
-    textTitle5: 'บริการคุ้มกัน บริการจัดหาพาหนะส่วนตัว จัดหาที่พัก',
-    textTitle6: 'หลักสูตรครบถ้วน สำหรับบอดี้การ์ดมืออาชีพ',
+    textTitle1: 'Our company can offer personal escort service',
+    textTitle2: 'at the highest level in thailand and around the world',
+    textTitle3: 'Our company has personnel ready to support various tasks. About security that you will use all services. In which we have personnel ready Through training in the bodyguard course in security And our personnel have been trained Both fighting with hands And fighting with weapons and we have Partner around the world ready to work in any country you want. We have various things to serve you, both car, boat, and airplane And accommodation services for customers as well',
+    textTitle4: 'Guaranteed by an experienced team. The protection of many important people',
+    textTitle5: 'Bodyguard service , Providing private transport',
+    textTitle6: 'Complete course for professional bodyguards',
   })
   const langChange = (lan) => {
     switch (lan) {
@@ -47,12 +47,12 @@ export const Index = () => {
   }
 
   useEffect(()=>{
-    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    const localStorageOut = localStorage.getItem('languageSecue') || "EN";
     langChange(localStorageOut);
   },[])
 
   const changLanguage = (lang) => {
-    const localStorageWord = localStorage.getItem('languageSecue') || "TH";
+    const localStorageWord = localStorage.getItem('languageSecue') || "EN";
     let langC = localStorageWord || lang;
     langChange(langC);
   }

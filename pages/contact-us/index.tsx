@@ -5,8 +5,8 @@ import Image from 'next/image';
 export const Index = () => {
 
   const [textData, setTextData] = useState({
-    textTitle1: 'บริษัทของเรา ขอนำเสนอบริการดูแลและคุ้มกันบุคคลสำคัญ(Vip)',
-    textTitle2: 'ระดับการดูแลตั้งแต่พื้นฐานจนถึงระดับสูงสุด(24 ช.ม)'
+    textTitle1: 'Our company offers a service for personal care and escort (Vip).',
+    textTitle2: 'The level of care from the basics to the highest level (24 hrs.)'
   })
   const langChange = (lan) => {
     switch (lan) {
@@ -27,7 +27,7 @@ export const Index = () => {
     }
   }
   useEffect(()=>{
-    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    const localStorageOut = localStorage.getItem('languageSecue') || "EN";
     langChange(localStorageOut);
   },[])
   return (

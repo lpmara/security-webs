@@ -11,21 +11,23 @@ import {photos, photos2} from '../../components/imagesComponent/photoService';
 export const Index = () => {
 
   const [textData, setTextData] = useState({
-    textdetail1: 'ด้วยประสบการณ์การดูแลอารักขาบุคคลสำคัญเกินกว่า 26ปี โดยผู้มีประสบการณ์ที่ผ่านการฝึกอบรมการรักษาความปลอดภัยมาอย่างเข้มข้น ตามหลักมาตราฐานสากล และมีประสบการณ์',
-    textdetail2: 'เรามีความสามารถใช้เทคโนโลยีด้านการรักษาความปลอดภัย เพื่อส่งเสริมให้ท่านมีความปลอดภัยสูงสุด เราสัญญาว่าชีวิต และทรัพย์สินของท่านจะปลอดภัย ใช้บริการของเรา',
-    textTitle0: 'บริการของเรา',
-    textTitle1: '1. ดูแลความปลอดภัย ขั้นต่ำถึงสูงสุด มีบริการตั้งแต่ 10 ชั่วโมง - 24 ชั่วโมง',
-    textTitle2: '2. รับทำงานทั้งนอกเครื่องแบบ และ ในเครื่องแบบ',
-    textTitle3: '(สามารถปรับเปลี่ยนได้ตามสถานการณ์)',
-    textTitle4: '3. การทำงานแบบ มีอาวุธ และไม่มีอาวุธ (สามารถปรับเปลี่ยนได้ตามสถานการณ์)',
-    textTitle5: '4. รับงานในลักษณะของ Secret Service',
-    textTitle6: '5. สามารถจัดหา รถลีมูซีน เรือยอช เฮลิคอปเตอร์ และเครื่องบินส่วนตัว',
-    textTitle7: '6. มีบริการจัดหาที่พัก ตามความต้องการของลูกค้า',
-    textTitle8: '7. สามารถจัดหา Butler (Butler Service)',
-    textTitle9: '8. มีบริการบุคลากรที่ชำนาญการท่องเที่ยว และสถานที่ท่องเที่ยวต่าง',
-    textTitle10: '9. รับบริการทั้งในและนอกประเทศ Agent ทุกคนมีตราประจำตัว',
-    textTitle11: 'เรามี Partner อยู่ทั่วโลกคอยบริการท่าน',
+    textdetail1: 'With more than 26 years of experience in custody of important persons with extensive security training experience According to international standards And experienced',
+    textdetail2: 'We have the ability to use security technology. To promote your safety We promise life And your assets will be safe Use our service',
+    textTitle0: 'Our service',
+    textTitle1: '1. Take care of safety Minimum to maximum Available from 10 hours to 24 hours.',
+    textTitle2: '2. Accepting work both under uniform and in uniform',
+    textTitle3: '(Can be adjusted according to the situation)',
+    textTitle4: '3. Work with weapons and without weapons (Can be adjusted according to the situation)',
+    textTitle5: '4. Get a job in the nature of Secret Service',
+    textTitle6: '5. Can supply limousines, yachts, helicopters and private planes.',
+    textTitle7: '6. Accommodation accommodation service available. According to customer requirements',
+    textTitle8: '7. Can supply Butler (Butler Service)',
+    textTitle9: '8. There is a service personnel specializing in tourism. And various tourist attractions',
+    textTitle10: '9. Receive service both inside and outside the country. Every Agent has an identity badge.',
+    textTitle11: 'We have partners all over the world to serve you.',
   })
+  const [imageCollumn1, setImageCollumn1] = useState(3);
+  const [imageCollumn2, setImageCollumn2] = useState(5);
   const langChange = (lan) => {
     switch (lan) {
       case "TH" : {
@@ -69,8 +71,12 @@ export const Index = () => {
     }
   }
   useEffect(()=>{
-    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    const localStorageOut = localStorage.getItem('languageSecue') || "EN";
     langChange(localStorageOut);
+    if(window.innerWidth !== undefined && window.innerWidth < 766){
+      setImageCollumn1(1);
+      setImageCollumn2(1);
+     }
   },[])
   const images = [
     {
@@ -101,6 +107,7 @@ export const Index = () => {
       side: 1,
     },
   ];
+
   return (
     <>
       <NavBar changeLanguage={langChange} />
@@ -121,7 +128,7 @@ export const Index = () => {
           
           <div className={styles.firstContent}>
             <div className={styles.contentTextMain}>
-            <Gallery photos={photos} margin={5} columns={3} direction={"column"} />
+            <Gallery photos={photos} margin={5} columns={imageCollumn1} direction={"column"} />
             </div>
             <div className={styles.contentImageMain}>
               <Image
@@ -165,18 +172,7 @@ export const Index = () => {
                 </div>
             </div>
           </div>
-          <Gallery photos={photos2} margin={5} columns={5} direction={"column"} />
-          {/* <div className={styles.secondContent}>
-            <div className={styles.contentImageMain}>
-            
-            </div>
-            <div className={styles.gapCenter}></div>
-            <div className={styles.contentTextMain}>
-                <div>
-                <ImageGallery items={images} />
-                </div>
-            </div>
-          </div> */}
+          <Gallery photos={photos2} margin={5} columns={imageCollumn2} direction={"column"} />
         </div>
       </div>
     </>

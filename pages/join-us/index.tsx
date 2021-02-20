@@ -6,11 +6,11 @@ import ReactPlayer from 'react-player';
 export const Index = () => {
 
   const [textData, setTextData] = useState({
-    textTitle1: 'ร่วมงานกับเรา',
-    textTitle2: 'มาร่วมเป็นส่วนหนึ่งของงาน บอดี้การ์ด รักษาความปลอดภัยให้กับบุคลสำคัญ',
-    textTitle3: 'ติดต่อ Mr.ken (+66) 89 496 2596',
-    textTitle4: 'ตัวอย่าง บัตรประจำตัวบอดี้การ์ดของเรา',
-    textTitle5: 'ฟอร์มสมัครสมาชิก',
+    textTitle1: 'Work with us',
+    textTitle2: 'Become a part of the bodyguard event to keep important people safe.',
+    textTitle3: 'Contact Mr.ken (+66) 89 496 2596',
+    textTitle4: 'Example of our bodyguard card',
+    textTitle5: 'Example of registration form',
   })
   const langChange = (lan) => {
     switch (lan) {
@@ -37,7 +37,7 @@ export const Index = () => {
     }
   }
   useEffect(()=>{
-    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    const localStorageOut = localStorage.getItem('languageSecue') || "EN";
     langChange(localStorageOut);
   },[])
   return (

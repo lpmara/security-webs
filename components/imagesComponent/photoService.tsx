@@ -65,102 +65,102 @@ export const photos2 = [
     {
         src: "/images/our-work/shows/349140.jpg",
         width: 4,
-        height: 5
+        height: 4
     },
     {
         src: "/images/our-work/shows/349144.jpg",
         width: 4,
-        height: 5
+        height: 4
     },
     {
         src: "/images/our-work/shows/349170.jpg",
         width: 4,
-        height: 5
+        height: 4
     },
     {
         src: "/images/our-work/shows/349197.jpg",
         width: 4,
-        height: 5
+        height: 4
     },
     {
         src: "/images/our-work/shows/349200.jpg",
         width: 4,
-        height: 5
+        height: 4
     },
     {
         src: "/images/our-work/shows/349266.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/349340.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/349364.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/349368.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/349377.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349105.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349115.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349116.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349119.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349120.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349121.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349128.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349129.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349130.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349132.jpg",
         width: 4,
-        height: 5
+        height: 3
     },
     {
         src: "/images/our-work/shows/sh2/349136.jpg",
