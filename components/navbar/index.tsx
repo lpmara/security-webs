@@ -12,13 +12,13 @@ export const Index = ({changeLanguage}:changeLanguageInterface) => {
   const [colorEn, setColorEn] = useState("");
   const [toggleMenuMobile, setToggleMenuMobile] = useState(false);
   const [textData, setTextData] = useState({
-    textDetail1: 'หน้าแรก',
-    textDetail2: 'พาร์ทเนอร์',
-    textDetail3: 'บริการของเรา',
-    textDetail4: 'หลักสูตร',
-    textDetail5: 'ติดต่อเรา',
-    textDetail6: 'เกี่ยวกับเรา',
-    textDetail7: 'ร่วมงานกับเรา',
+    textDetail1: 'Home',
+    textDetail2: 'Partner',
+    textDetail3: 'Our Service',
+    textDetail4: 'Training',
+    textDetail5: 'Contact Us',
+    textDetail6: 'About Us',
+    textDetail7: 'Join Us',
   })
 
   
@@ -64,7 +64,7 @@ export const Index = ({changeLanguage}:changeLanguageInterface) => {
   }
 
   useEffect(()=>{
-    const localStorageOut = localStorage.getItem('languageSecue') || "TH";
+    const localStorageOut = localStorage.getItem('languageSecue') || "EN";
     changeLang(localStorageOut);
     if(localStorageOut === 'EN'){
       setColorTh('');
@@ -113,6 +113,8 @@ export const Index = ({changeLanguage}:changeLanguageInterface) => {
                   height={52}
                 />
         </div>
+        <div onClick={()=>handleChangeLanguage("EN")} className={styles.flagLanguageEN} style={{color:colorEn}}>EN</div>
+        <div onClick={()=>handleChangeLanguage("TH")} className={styles.flagLanguageTH} style={{color:colorTh}}>TH</div>
         <div
               id="MenuMobile"
               className={styles.MenuListMobile}
@@ -183,8 +185,8 @@ export const Index = ({changeLanguage}:changeLanguageInterface) => {
             <div className={styles.telNumber2}>(+66) 82 283 9789</div>
           </div>
           <div className={styles.flexLangauge}>
-            <div onClick={()=>handleChangeLanguage("TH")} className={styles.flagLanguageTH} style={{color:colorTh}}>TH</div>
             <div onClick={()=>handleChangeLanguage("EN")} className={styles.flagLanguageEN} style={{color:colorEn}}>EN</div>
+            <div onClick={()=>handleChangeLanguage("TH")} className={styles.flagLanguageTH} style={{color:colorTh}}>TH</div>
           </div>
           
         </div>
