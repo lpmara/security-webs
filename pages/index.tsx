@@ -75,15 +75,15 @@ export const Index = () => {
             <div className={styles.imagePaddTop}>
               <Image
                     loading={'eager'}
-                    src={'/images/301127.jpg'}
+                    src={'/images/400690.jpg'}
                     alt={'image 0000'}
                     width={1125}
-                    height={1068}
+                    height={1563}
                   /></div>
             <div>
               <Image
                     loading={'eager'}
-                    src={'/images/301132.jpg'}
+                    src={'/images/400685.jpg'}
                     alt={'image 0001'}
                     width={1048}
                     height={1563}

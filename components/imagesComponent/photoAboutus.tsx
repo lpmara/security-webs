@@ -399,26 +399,26 @@ export const photos = [
         width: 4,
         height: 3
     },
-    {
-        src: "/images/about-us/new/349030.jpg",
-        width: 3,
-        height: 4
-    },
+    // {
+    //     src: "/images/about-us/new/349030.jpg",
+    //     width: 3,
+    //     height: 4
+    // },
     {
         src: "/images/about-us/new/349031.jpg",
         width: 4,
         height: 3
     },
-    {
-        src: "/images/about-us/new/349033.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "/images/about-us/new/349040.jpg",
-        width: 3,
-        height: 4
-    },
+    // {
+    //     src: "/images/about-us/new/349033.jpg",
+    //     width: 3,
+    //     height: 4
+    // },
+    // {
+    //     src: "/images/about-us/new/349040.jpg",
+    //     width: 3,
+    //     height: 4
+    // },
     {
         src: "/images/about-us/new/349041.jpg",
         width: 3,
