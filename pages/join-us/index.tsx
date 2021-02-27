@@ -84,6 +84,29 @@ export const Index = () => {
                     height={1063}
                   />
             </div>
+            <div className={styles.imageCorp}>
+            <Image
+                    loading={'eager'}
+                    src={'/images/about-us/new/349030.jpg'}
+                    alt={'image 0000'}
+                    width={450}
+                    height={600}
+                  />
+                  <Image
+                    loading={'eager'}
+                    src={'/images/about-us/new/349033.jpg'}
+                    alt={'image 0000'}
+                    width={450}
+                    height={600}
+                  />
+                  <Image
+                    loading={'eager'}
+                    src={'/images/about-us/new/349040.jpg'}
+                    alt={'image 0000'}
+                    width={450}
+                    height={600}
+                  />
+            </div>
             <div className={styles.textExample}>
             {textData.textTitle5}
             </div>
@@ -104,3 +127,4 @@ export const Index = () => {
 };
 
 export default Index;
+
