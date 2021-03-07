@@ -123,7 +123,7 @@ export const Index = () => {
                     {textData.textTitle1}
                 </div>
                 <div className={styles.centerVideo}>
-                  <ReactPlayer url="https://www.youtube.com/watch?v=vGGPhO0tHJs"  width='70%'
+                  <ReactPlayer url="https://www.youtube.com/watch?v=klojU0lgYv0"  width='70%'
                   height='550px'/>
                 </div>
             </div>
